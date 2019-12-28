@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+
+<div class="resourceGroup" *ngFor="let resourceGroup of resourceGroups">
+  <br>
+  <div><strong>Name: </strong> {{resourceGroup.name}}</div>
+  <div><strong>Subscription Id: </strong>{{resourceGroup.id.slice(15,51)}}</div>
+  <div><strong>Location: </strong>{{resourceGroup.location}}</div>
+  <div><strong>Managed by: </strong>{{resourceGroup.managedBy}}</div>
+  <div><strong>State of virtual machine:  </strong>{{resourceGroup.properties.provisioningState}}</div>
+</div>
+
+
+<button type=submit class='vm' id='resourceGroup' click="getResourceGroup()">Resource Group</button>
