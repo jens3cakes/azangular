@@ -4,11 +4,11 @@ import { BackendService } from '../../services/backend.service';
 
 
 @Component({
-  templateUrl: './search.component.html',
-  styleUrls: ['./search.component.scss']
+  templateUrl: './resourceGroups.component.html',
+  styleUrls: ['./resourceGroups.component.scss']
 })
 
-export class SearchComponent implements OnInit {
+export class ResourceGroupsComponent implements OnInit {
   title: string = 'Resource Group'
   resourceGroups:[];
 

@@ -1,5 +1,6 @@
-import{ Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { SessionService } from './session.service'
 
 @Injectable({
   providedIn: 'root'
@@ -8,28 +9,58 @@ import { HttpClient } from '@angular/common/http';
 
 export class BackendService {
   baseUrl: string = "http://localhost:4200";
-  
-constructor(
-  private http: HttpClient){
 
-  }
+  constructor(
+    private http: HttpClient,
+    private session: SessionService) {
+  };
 
-login(){
-  console.log('backend')
-  const loginUrl = this.baseUrl + '/api/login'
-  console.log(loginUrl)
+  login() {
+    console.log('backend')
+    const loginUrl = this.baseUrl + '/api/login'
+    console.log(loginUrl)
+    return this.http.get(loginUrl)
+      .toPromise()
+      .then(() => {
+        return this.session.setSession()
+      })
 
-  return this.http.get(loginUrl)
-    .toPromise()
-}
+  };
 
-getGroups(){
-  console.log('backend2')
-  const groupUrl = this.baseUrl + '/api/groups/name'
-  return this.http.get(groupUrl)
-  .toPromise()
-}
+  getGroups() {
+    console.log('backend2')
+    const groupUrl = this.baseUrl + '/api/azure/name'
+    return this.http.get(groupUrl)
+      .toPromise()
+  };
 
+  listAllAccounts() {
+    console.log('backend3')
+    const listAllAccountsUrl = this.baseUrl + '/api/azure/accounts'
+    return this.http.get(listAllAccountsUrl)
+      .toPromise()
+  };
+
+  showAccountNameId() {
+    console.log('backend4')
+    const showAccountNameIdUrl = this.baseUrl + '/api/azure/account'
+    return this.http.get(showAccountNameIdUrl)
+      .toPromise()
+  };
+
+  listAccIdNames() {
+    console.log('backend5')
+    const listAccIdNamesUrl = this.baseUrl + '/api/azure/subId'
+    return this.http.get(listAccIdNamesUrl)
+      .toPromise()
+  };
+
+  groupList(param) {
+    console.log('backend6', param)
+    const groupListUrl = this.baseUrl + '/api/azure/grouplist/:subId'
+    return this.http.get(groupListUrl, param)
+      .toPromise()
+  };
 
 
 }

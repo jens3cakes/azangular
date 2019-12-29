@@ -32,11 +32,15 @@ app.get('/api/login', (req, res) => {
     });
 });
 
-app.use('/api/groups', azureRoute);
+app.use('/api/azure', azureRoute);
 
 
 app.get('/smoke', (req, res) => {
   res.send("Here is the fire")
+
+.catch(err => {
+  res.json(err)
+})
 })
 
 const server = http.createServer(app);

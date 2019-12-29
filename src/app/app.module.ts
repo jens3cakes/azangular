@@ -7,16 +7,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { HomeComponent } from './pages/home/home.component';
-import { SearchComponent } from './pages/search/search.component';
+import { ResourceGroupsComponent } from './pages/resourceGroups/resourceGroups.component';
 import { HeaderComponent } from './component/header/header.component';
+import { ListAccountsComponent } from './pages/listAccounts/listAccounts.component';
+import { ShowAccountComponent } from './pages/showAccount/showAccount.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    SearchComponent,
-    HeaderComponent
+    ResourceGroupsComponent,
+    HeaderComponent, 
+    ListAccountsComponent,
+    ShowAccountComponent
   ],
   imports: [
     BrowserModule,

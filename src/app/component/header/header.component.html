@@ -1,0 +1,16 @@
+<h1>{{title}}</h1>
+<div>
+  <ul>
+    <li>
+      <h2 button (click)="login()">Login to Azure</h2>
+    </li>
+    <li>
+      <h2><a *ngIf=isLoggedIn routerlink="">Account Info</a></h2>
+    </li>
+    <li>
+      <h2><a *ngIf=isLoggedIn routerlink="/resourceGroups">Resource Groups</a></h2>
+    </li>
+    <li>
+     <h2><a *ngIf=isLoggedIn routerlink="/logout">Logout of Azure</a></h2></li>
+  </ul>
+</div>
