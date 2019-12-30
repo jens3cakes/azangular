@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { Router } from "@angular/router"
+import { Router, NavigationExtras } from "@angular/router"
 import { BackendService } from "../../services/backend.service";
 
 @Component({
@@ -7,43 +7,49 @@ import { BackendService } from "../../services/backend.service";
   styleUrls: ['./showAccount.component.scss']
 })
 
-export class ShowAccountComponent implements OnInit{
-  account:{
-    environmentName:string,
-    id:string,
-    isDefault:string,
-    name:string,
+export class ShowAccountComponent implements OnInit {
+  account: {
+    environmentName: string,
+    id: string,
+    isDefault: string,
+    name: string,
     state: string,
     tenantId: string,
     user: {
-      name:string,
-      type:string
+      name: string,
+      type: string
     }
-
   }
 
-  title:string='shit show'
+  groups: any
+  group: {}
 
-  
-  ngOnInit(){
+  nosy: boolean = false
+
+  title: string = 'shit show'
+
+
+  ngOnInit() {
     this.backend.showAccountNameId()
-    .then((resp:any)=>{
-      this.account = resp
-      return this.account
-    }
-    )
+      .then((resp: any) => {
+        this.account = resp
+        return this.account
+      }
+      )
   }
 
   constructor(
     private backend: BackendService,
-    private router: Router
-  ){
+    private router: Router,
+  ) {
 
   }
 
-getGList(){
-  console.log(this.account.id)
-  this.backend.groupList(this.account.id)
-}
+  getGList() {
+    return this.router.navigate(['group'])
+  }
 
+  getUList(){
+    return this.router.navigate(['user'] )
+  }
 }

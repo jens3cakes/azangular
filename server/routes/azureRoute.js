@@ -56,12 +56,11 @@ router.get('/tenId', (req, res)=> {
 })
 
 router.get('/grouplist/:subId', (req, res)=> {
-  console.log('g list by sub id', req.params.param)
-  let glSubId = req.params.subId
-  ps.addCommand(`az group list --subscription ${glSubId}`);
+  console.log('g list by sub id', req.params.subId)
+  ps.addCommand(`az group list --subscription ${req.params.subId}`);
   ps.invoke()
   .then(response => {
-    res.json(response)
+    res.json(JSON.parse(response))
   })
   .catch(err=>{
     res.send(err)

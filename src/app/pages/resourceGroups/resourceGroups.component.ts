@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute, NavigationExtras, ParamMap } from '@angular/router';
 import { BackendService } from '../../services/backend.service';
 
 
@@ -14,7 +14,10 @@ export class ResourceGroupsComponent implements OnInit {
 
   resourceGroup: Object;
 
+  groupSubId:string="";
+
   ngOnInit() {
+
     // let groupsName = this.routes.snapshot.paramMap.get('name');
     // console.log(groupsName)
     console.log('search')
@@ -24,14 +27,17 @@ export class ResourceGroupsComponent implements OnInit {
         return this.resourceGroups
       })
     console.log(this.resourceGroups)
-     }
-
+     
+  }
   constructor(
     private backend: BackendService,
     private router: Router,
     private routes: ActivatedRoute
-  ) { }
-
+  ){
+    // const getNav = routes.paramMap.subscribe((params:ParamMap)=>{
+    //   this.groupSubId = params.get('subId')
+    //   console.log(getNav)
+    //})
+  }
 }
-
 

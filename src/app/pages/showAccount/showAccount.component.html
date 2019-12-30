@@ -1,7 +1,6 @@
-
 <h1>{{title}}</h1>
 
-<div>
+<div class="account">
   <div>{{account.environmentName}}</div>
   <div>{{account.id}}</div>
   <div>{{account.isDefault}}</div>
@@ -10,13 +9,8 @@
   <div>{{account.tenatId}}</div>
   <div>{{account.user.name}}</div>
   <div>{{account.user.type}}</div>
-  <div class="buttons">
-    <button (click)='getGList()'>See Groups</button>
-    <button (click)='getUList'>See Users</button>
-  </div>
+</div>
 
-
-
-
-
+<div>
+  <button routerLink="/groups">See Groups</button>
 </div>

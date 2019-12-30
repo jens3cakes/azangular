@@ -55,10 +55,10 @@ export class BackendService {
       .toPromise()
   };
 
-  groupList(param) {
-    console.log('backend6', param)
-    const groupListUrl = this.baseUrl + '/api/azure/grouplist/:subId'
-    return this.http.get(groupListUrl, param)
+  groupList(subId) {
+    console.log('backend6', subId)
+    const groupListUrl = this.baseUrl + `/api/azure/grouplist/${subId}`
+    return this.http.get(groupListUrl, subId)
       .toPromise()
   };
 
