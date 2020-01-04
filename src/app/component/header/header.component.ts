@@ -9,40 +9,46 @@ import { Router } from "@angular/router";
   styleUrls: ['./header.component.scss']
 })
 
-export class HeaderComponent implements OnInit{
-title = 'Cohort 3 Azure Pentest'
+export class HeaderComponent implements OnInit {
+  title = 'Cohort 3 Azure Pentest'
 
 
-constructor(
-  private backend: BackendService,
-  private router: Router,
-  private session: SessionService
-){
-  isLoggedIn:Boolean
-}
-ngOnInit (){
+  constructor(
+    private backend: BackendService,
+    private router: Router,
+    private session: SessionService
+  ) {
+    this.isLoggedIn = this.session.getLogStatus()
+    console.log(this.isLoggedIn)
 
-console.log('header onInit fired')
-}
+  }
+  isLoggedIn: boolean;
 
+  ngOnInit() {
+    this.isLoggedIn=this.session.getLogStatus()
+    console.log(this.isLoggedIn)
+    console.log('header onInit fired')
 
-login(){
-  console.log('header ts')
-  return this.backend.login()
-  .then(()=> {
-    console.log('return from backend')
-  })
-  .then(() => {
-    return this.router.navigate(['home'])
-  })
-}
+  }
 
 
+  login() {
+    console.log('header ts')
+    return this.backend.login()
+      .then(() => {
+        console.log('return from backend')
+      })
+      .then(() => {
+        return this.router.navigate(['home'])
+      });
+  };
 
-
-
-
-
-
+  logout() {
+    console.log('logout')
+    return this.backend.logout()
+      .then(() => {
+        return this.router.navigate([''])
+      });
+  };
 
 }

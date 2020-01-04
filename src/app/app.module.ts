@@ -20,7 +20,7 @@ import { ShowAccountComponent } from './pages/showAccount/showAccount.component'
     ResourceGroupsComponent,
     HeaderComponent, 
     ListAccountsComponent,
-    ShowAccountComponent
+    ShowAccountComponent,
   ],
   imports: [
     BrowserModule,

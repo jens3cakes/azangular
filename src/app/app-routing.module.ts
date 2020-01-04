@@ -9,10 +9,10 @@ import { ShowAccountComponent } from './pages/showAccount/showAccount.component'
 const routes: Routes = [
   
   { path: 'home', component: HomeComponent },
-  { path: 'header', component: HeaderComponent},
-  { path: 'groups', component: ResourceGroupsComponent},
-  { path: 'listAcc', component: ListAccountsComponent},
-  { path: 'showAcc', component: ShowAccountComponent},
+  { path: 'header', component: HeaderComponent },
+  { path: 'groups', component: ResourceGroupsComponent },
+  { path: 'listAcc', component: ListAccountsComponent },
+  { path: 'showAcc', component: ShowAccountComponent },
   { path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 

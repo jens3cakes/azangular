@@ -32,6 +32,12 @@ app.get('/api/login', (req, res) => {
     });
 });
 
+app.get('/api/logout', (req, res)=>{
+  ps.addCommand('az logout')
+  ps.addCommand('az account clear');
+  ps.invoke()
+})
+
 app.use('/api/azure', azureRoute);
 
 

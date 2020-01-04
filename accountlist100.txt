@@ -1,0 +1,26 @@
+[
+  {
+    "cloudName": "AzureCloud",
+    "id": "31e8798c-0b2e-4c10-a063-35b9b0b2c28e",
+    "isDefault": true,
+    "name": "Azure subscription 1",
+    "state": "Enabled",
+    "tenantId": "6791ea3e-af40-40ac-bce4-6e9958683530",
+    "user": {
+      "name": "jhikichi001@gmail.com",
+      "type": "user"
+    }
+  },
+  {
+    "cloudName": "AzureCloud",
+    "id": "7e066a99-f5d1-4cbb-b773-8bd68dd2c64d",
+    "isDefault": false,
+    "name": "Azure subscription 1",
+    "state": "Enabled",
+    "tenantId": "f6a8b22b-5315-4961-a00f-1bc4eac90dd4",
+    "user": {
+      "name": "baker.rw@icloud.com",
+      "type": "user"
+    }
+  }
+]

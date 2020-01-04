@@ -15,6 +15,8 @@ export class BackendService {
     private session: SessionService) {
   };
 
+  isLoggedIn:boolean;
+
   login() {
     console.log('backend')
     const loginUrl = this.baseUrl + '/api/login'
@@ -41,6 +43,17 @@ export class BackendService {
       .toPromise()
   };
 
+  fileInfo(){
+
+    // console.log('filegetter')
+    // const filegetterUrl = this.baseUrl + '/api/azure/print'
+    // return this.http.get(filegetterUrl)
+    // .toPromise()
+    // .then((Response)=>{
+    //   console.log(Response)
+    // })
+  };
+
   showAccountNameId() {
     console.log('backend4')
     const showAccountNameIdUrl = this.baseUrl + '/api/azure/account'
@@ -61,6 +74,17 @@ export class BackendService {
     return this.http.get(groupListUrl, subId)
       .toPromise()
   };
+
+  logout(){
+    console.log('backend7')
+    const logoutUrl = this.baseUrl + '/api/logout'
+    return this.http.get(logoutUrl)
+    .toPromise()
+    .then(()=>{
+      this.session.logoutClearSession()
+    })
+  };
+
 
 
 }

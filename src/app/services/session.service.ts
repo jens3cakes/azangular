@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 
 export class SessionService {
   isLoggedIn: boolean;
-  
+
   constructor() {
     let logStatus = localStorage.getItem('isLoggedIn')
   }
@@ -17,12 +17,21 @@ export class SessionService {
   }
 
   getLogStatus() {
-    return this.isLoggedIn
-  }
+    let booLog = localStorage.getItem('isLoggedIn')
+    if (booLog == 'true') {
+      console.log(typeof(booLog), 'true')
+      this.isLoggedIn = true
+      return this.isLoggedIn
+    }
+    else {
+      console.log(booLog, 'false')
+      return this.isLoggedIn = false
+    };
+  };
 
   logoutClearSession() {
-    return this.isLoggedIn = false
     localStorage.clear();
+    return this.isLoggedIn = false
   }
 
 }
