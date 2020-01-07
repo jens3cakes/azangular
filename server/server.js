@@ -36,6 +36,12 @@ app.get('/api/logout', (req, res)=>{
   ps.addCommand('az logout')
   ps.addCommand('az account clear');
   ps.invoke()
+  .then(()=>{
+    console.log('logged out')
+  })
+  .catch(err =>{
+    res.json(err)
+  })
 })
 
 app.use('/api/azure', azureRoute);

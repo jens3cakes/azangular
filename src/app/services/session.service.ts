@@ -31,6 +31,7 @@ export class SessionService {
 
   logoutClearSession() {
     localStorage.clear();
+    console.log('session token clear')
     return this.isLoggedIn = false
   }
 

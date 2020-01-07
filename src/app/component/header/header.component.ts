@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { BackendService } from "../../services/backend.service"
 import { SessionService } from "../../services/session.service"
 import { Router } from "@angular/router";
+import { NgForm } from "@angular/forms";
 
 @Component({
   selector: 'app-header',
@@ -10,8 +11,9 @@ import { Router } from "@angular/router";
 })
 
 export class HeaderComponent implements OnInit {
-  title = 'Cohort 3 Azure Pentest'
-
+  title = 'Cohort 3 Azure Pentest';
+  accounts: Object[]
+  allResourceGroups: Object[]
 
   constructor(
     private backend: BackendService,
@@ -25,7 +27,7 @@ export class HeaderComponent implements OnInit {
   isLoggedIn: boolean;
 
   ngOnInit() {
-    this.isLoggedIn=this.session.getLogStatus()
+    this.isLoggedIn = this.session.getLogStatus()
     console.log(this.isLoggedIn)
     console.log('header onInit fired')
 
@@ -40,8 +42,19 @@ export class HeaderComponent implements OnInit {
       })
       .then(() => {
         return this.router.navigate(['home'])
-      });
+      })
+      .then(()=>{
+        location.reload()
+      })
   };
+
+  accountList() {
+        this.router.navigate(['listAcc'])
+  };
+
+  allResourceGroupsList(){
+      this.router.navigate(['all_groups'])
+  }
 
   logout() {
     console.log('logout')

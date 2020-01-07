@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 import { BackendService } from "../../services/backend.service"
-import printJS from 'print-js';
 
 
 @Component({
@@ -26,20 +25,5 @@ export class ListAccountsComponent implements OnInit {
       })
   }
 
-  // printReport() {
-  //   printJS({
-  //     printable: 'accountlist.txt',
-  //     properties: [
-  //       { field: 'cloudName', displayName: 'Cloud Service Provider' },
-  //       { field: 'id', displayName: 'Subscription Id' },
-  //       { field: 'isDefault', displayName: 'Default Account' },
-  //       { field: 'name', displayName: 'Name of Account' },
-  //       { field: 'state', displayName: 'Status of Account' },
-  //       { field: 'tenantId', displayName: 'Tenant Id' },
-  //       { field: 'user.name', displayName: 'User' },
-  //       { field: 'user.type', displayName: 'Type of User' }
-  //     ]
-  // })
-  // }
 
 }

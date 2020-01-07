@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+
+<div class="resourceGroup" *ngFor="let allResourceGroup of allResourceGroups">
+  <br>
+  <div><strong>Name: </strong> {{allResourceGroup.name}}</div>
+  <div><strong>Subscription Id: </strong>{{allResourceGroup.id.slice(15,51)}}</div>
+  <div><strong>Location: </strong>{{allResourceGroup.location}}</div>
+  <div><strong>Managed by: </strong>{{allResourceGroup.managedBy}}</div>
+  <div><strong>State of virtual machine:  </strong>{{allResourceGroup.properties.provisioningState}}</div>
+  <button (click)="showSqlServer(allResourceGroup.id.slice(15,51))">Get Sql servers: </button>
+</div>
+
+
+<!-- <button type=submit class='vm' id='resourceGroup' click="getResourceGroup()">Resource Group</button> -->

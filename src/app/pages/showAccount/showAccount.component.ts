@@ -46,10 +46,11 @@ export class ShowAccountComponent implements OnInit {
   }
 
   getGList() {
-    return this.router.navigate(['group'])
+      return this.router.navigate(['/groups', this.account.id])
+    
   }
 
   getUList(){
-    return this.router.navigate(['user'] )
+    return this.router.navigate(['/user', this.account.tenantId] )
   }
 }

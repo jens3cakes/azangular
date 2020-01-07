@@ -8,30 +8,51 @@ import { BackendService } from '../../services/backend.service';
 })
 
 export class HomeComponent implements OnInit {
-  ngOnInit(){
+  ngOnInit() {
     console.log('home onint fired');
+    this.backend.userRoleAssignment()
+    .then((Response)=>{
+      return this.user.id = Response[0].id.slice(15, 51), this.user.name = Response[0].name, this.user.principalId = Response[0].principalId, this.user.principalName = Response[0].principalName, this.user.principalType = Response[0].principalType, this.user.roleDefinitionId = Response[0].roleDefinitionId, this.user.roleDefinitionName = Response[0].roleDefinitionName, this.user.scope = Response[0].scope, this.user.type = Response[0].type
+    })
+
   };
 
   title: string = 'Welcome to Cohort3 Azure Pentest';
 
+  // data: { 'id', 'name', 'principalId', 'principalName', 'principalType', 'roleDefinitionId', 'roleDefinitionName', 'scope', 'type' }
+
+  user: {
+    'id': string,
+    'name': string,
+    'principalId': string,
+    'principalName': string,
+    'principalType': string,
+    'roleDefinitionId': string,
+    'roleDefinitionName': string,
+    'scope': string,
+    'type': string,
+  } 
+  = {
+      'id': "",
+      'name': "",
+      'principalId': "",
+      'principalName': "",
+      'principalType': "",
+      'roleDefinitionId': "",
+      'roleDefinitionName': "",
+      'scope': "",
+      'type': ""
+    }
+
   constructor(
     private backend: BackendService,
     private router: Router
-  ){}
-
-  login(){
-    console.log('home ts')
-    return this.backend.login()
-    .then(()=> {
-      console.log('return from backend')
-    })
-    .then(() => {
-      return this.router.navigate(['search'])
-    })
-  }
+  ) { }
 
 
 
 
-  
+
+
+
 }

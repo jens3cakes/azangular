@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { SessionService } from './session.service'
+import { readPatchedData } from '@angular/core/src/render3/util';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,7 @@ export class BackendService {
     private session: SessionService) {
   };
 
-  isLoggedIn:boolean;
+  isLoggedIn: boolean;
 
   login() {
     console.log('backend')
@@ -26,13 +27,12 @@ export class BackendService {
       .then(() => {
         return this.session.setSession()
       })
-
   };
 
   getGroups() {
     console.log('backend2')
-    const groupUrl = this.baseUrl + '/api/azure/name'
-    return this.http.get(groupUrl)
+    const groupsUrl = this.baseUrl + '/api/azure/groups'
+    return this.http.get(groupsUrl)
       .toPromise()
   };
 
@@ -43,7 +43,7 @@ export class BackendService {
       .toPromise()
   };
 
-  fileInfo(){
+  fileInfo() {
 
     // console.log('filegetter')
     // const filegetterUrl = this.baseUrl + '/api/azure/print'
@@ -75,14 +75,37 @@ export class BackendService {
       .toPromise()
   };
 
-  logout(){
+  userRoleAssignment() {
     console.log('backend7')
+    const userRoleAssignmentUrl = this.baseUrl + '/api/azure/user'
+    return this.http.get(userRoleAssignmentUrl)
+      .toPromise()
+  };
+
+  showSqlServer(id) {
+    console.log('backend8', id)
+    const showSqlServerUrl = this.baseUrl + `/api/azure/sql/${id}`
+    return this.http.get(showSqlServerUrl, id)
+      .toPromise()
+  }
+
+  showDbList(group,servename){
+    console.log('backend9', group, servename)
+    const showDbListUrl = this.baseUrl + `/api/azure/sqlDb/${group}/${servename}`
+    return this.http.get(showDbListUrl, group, servename)
+    .toPromise()
+  }
+
+  logout() {
+    console.log('backend10')
     const logoutUrl = this.baseUrl + '/api/logout'
     return this.http.get(logoutUrl)
-    .toPromise()
-    .then(()=>{
-      this.session.logoutClearSession()
-    })
+      .toPromise()
+      .then((Response) => {
+        console.log(Response)
+        this.session.logoutClearSession()
+      })
+
   };
 
 

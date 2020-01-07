@@ -1,2 +1,8 @@
-<h1>{{title}}</h1>
-<button (click)="login()">Click to log in to your Azure Account</button>
+<!-- <h1>{{title}}</h1>
+<button (click)="login()">Click to log in to your Azure Account</button> -->
+
+<div class="userInfo">
+<h2 id="username"><strong>Name: </strong>{{user.principalName}}</h2>
+<div id="subscriptionId"><strong>Subscription Id: </strong>{{user.id}}</div>
+<div id="role"><strong>Role: </strong>{{user.roleDefinitionName}}</div>
+</div>

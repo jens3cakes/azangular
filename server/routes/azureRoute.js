@@ -15,7 +15,7 @@ router.get('/accounts', (req,res) => {
   ps.addCommand('az account list');
   ps.invoke()
   .then(response => {
-    fs.writeFile('./src/app/pages/listAccounts/accountlist.txt',response, (err)=>{
+    fs.writeFile(`./src/app/pages/listAccounts/accountlist_${Date.now()}.txt`,response, (err)=>{
       if(err) throw err;
       console.log('file saved')
     })
@@ -26,18 +26,6 @@ router.get('/accounts', (req,res) => {
   });
 });
 
-
-
-
-
-router.get('/print', (req, res)=>{
-  fs.readFile('accountlist.txt', (err, data)=> {
-    if(err) throw err;
-    let info = JSON.parse(data);
-    console.log(info)
-  })
-
-})
 
 router.get('/account', (req, res)=> {
   console.log('ps show account')
@@ -87,24 +75,25 @@ router.get('/grouplist/:subId', (req, res)=> {
   });
 });
 
-router.get('/name', (req, res) => {
+router.get('/groups', (req, res) => {
   console.log('ps group')
   ps.addCommand('az group list');
   ps.invoke()
     .then(response => {
       res.json(JSON.parse(response))
-      console.log('azroute')
+      console.log('azroute', typeof(JSON.parse(response)))
     })
     .catch(err => {
       res.json(err)
     })
 });
 
-router.get('/users', (req, res)=>{
+router.get('/user', (req, res)=>{
   console.log('ps users')
-  ps.addCommand('az ad user list');
+  ps.addCommand(`az role assignment list`);
   ps.invoke()
   .then(response => {
+    console.log('hell')
     res.json(JSON.parse(response))
   })
   .catch((err)=>{
@@ -112,6 +101,29 @@ router.get('/users', (req, res)=>{
   })
 });
 
+router.get('/sql/:id', (req, res)=>{
+  console.log('ps sql', req.params.id)
+  ps.addCommand(`az sql server list --subscription ${req.params.id}`);
+  ps.invoke()
+  .then(response =>{
+    res.json(JSON.parse(response))
+  })
+  .catch((err)=>{
+     res.json(err)
+  })
+});
 
+router.get('/sqlDb/:group/:servename', (req, res)=>{
+  console.log('ps db')
+  ps.addCommand(`az sql db list -g ${group} -s ${servename}`, (req, res)=>{
+    ps.invoke()
+    .then(response => {
+      response.json(JSON.parse(response))
+    })
+    .catch((err)=>{
+      res.json(err)
+    })
+  })
+});
 
 module.exports = router;

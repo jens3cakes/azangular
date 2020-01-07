@@ -7,20 +7,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { HomeComponent } from './pages/home/home.component';
-import { ResourceGroupsComponent } from './pages/resourceGroups/resourceGroups.component';
+import { AllResourceGroupsComponent } from './pages/AllResourceGroups/AllResourceGroups.component';
 import { HeaderComponent } from './component/header/header.component';
 import { ListAccountsComponent } from './pages/listAccounts/listAccounts.component';
 import { ShowAccountComponent } from './pages/showAccount/showAccount.component';
+import { SqlServerComponent } from './pages/SqlServer/sqlServer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ResourceGroupsComponent,
+    AllResourceGroupsComponent,
     HeaderComponent, 
     ListAccountsComponent,
     ShowAccountComponent,
+    SqlServerComponent
   ],
   imports: [
     BrowserModule,
