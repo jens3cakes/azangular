@@ -56,6 +56,10 @@ export class HeaderComponent implements OnInit {
       this.router.navigate(['all_groups'])
   }
 
+  viewAllVms(){
+    this.router.navigate(['allVms'])
+  }
+
   logout() {
     console.log('logout')
     return this.backend.logout()

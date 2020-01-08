@@ -12,6 +12,8 @@ import { HeaderComponent } from './component/header/header.component';
 import { ListAccountsComponent } from './pages/listAccounts/listAccounts.component';
 import { ShowAccountComponent } from './pages/showAccount/showAccount.component';
 import { SqlServerComponent } from './pages/SqlServer/sqlServer.component';
+import { SqlDatabasesComponent } from './pages/SqlDatabases/sqlDatabases.component';
+import { AllVmsComponent } from './pages/AllVms/allVms.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { SqlServerComponent } from './pages/SqlServer/sqlServer.component';
     HeaderComponent, 
     ListAccountsComponent,
     ShowAccountComponent,
-    SqlServerComponent
+    SqlServerComponent,
+    SqlDatabasesComponent,
+    AllVmsComponent
   ],
   imports: [
     BrowserModule,

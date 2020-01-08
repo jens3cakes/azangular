@@ -1,0 +1,36 @@
+<h1>{{title}}</h1>
+
+<div class="virtualMachines" *ngFor="let vm of vms">
+  <h2 class="name">{{vm.name}}</h2>
+  <ul>
+    <li><strong>Boot Diagnostics Enabled: </strong>{{vm.diagnosticsProfile.bootDiagnostics.enabled}}</li>
+    <li><strong>Boot Diagnostics Storage URI: </strong>{{vm.diagnosticsProfile.bootDiagnostics.storageUri}}</li>
+    <li><strong>Hardware Profile: </strong>{{vm.hardwareProfile.vmSize}}</li>
+    <li><strong>Host: </strong>{{vm.host}}</li>
+    <li><strong>Subscription Id: </strong>{{vm.id.slice(15,51)}}</li>
+    <li><strong>License Type: </strong>{{vm.licenseType}}</li>
+    <li><strong>Location: </strong>{{vm.location}}</li>
+    <li><strong>Network Interfaces: </strong>{{vm.networkProfile.networkInterfaces.id}}</li>
+    <li><strong>Resource Group: </strong>{{vm.networkProfile.networkInterfaces.resourceGroup}}</li>
+    <li><strong>Admin Password: </strong>{{vm.osProfile.adminPassword}}</li>
+    <li><strong>Admin Username: </strong>{{vm.osProfile.adminUsername}}</li>
+    <li><strong>Computer Name: </strong>{{vm.osProfile.computerName}}</li>
+    <li><strong>Linux Configuration: </strong>{{vm.osProfile.linuxConfiguration}}</li>
+    <li><strong>Require Guest Provision Signal: </strong>{{vm.osProfile.requireGuestProvisionSignal}}</li>
+    <li><strong>Enable Automatic Updates: </strong>{{vm.osProfile.windowsConfiguration.enableAutomaticUpdates}}</li>
+    <li><strong>Provisioning State: </strong>{{vm.provisioningState}}</li>
+    <li><strong>Storage Version: </strong>{{vm.storageProfile.exactVersion}}</li>
+    <li><strong>Database SKU: </strong>{{vm.storageProfile.imageReference.sku}}</li>
+    <li><strong>Version: </strong>{{vm.storageProfile.imageReference.version}}</li>
+    <li><strong>Disk Caching: </strong>{{vm.storageProfile.osDisk.caching}}</li>
+    <li><strong>Disk Create Option: </strong>{{vm.storageProfile.osDisk.createOption}}</li>
+    <li><strong>Disk Encryption Settings: </strong>{{vm.storageProfile.osDisk.encryptionSettings}}</li>
+    <li><strong>Disk Size: </strong>{{vm.storageProfile.osDisk.diskSizeGb}} gb</li>
+    <li><strong>Disk Name: </strong>{{vm.storageProfile.osDisk.name}}</li>
+    <li><strong>OS Type: </strong>{{vm.storageProfile.osDisk.osType}}</li>
+    <li><strong>Tags: </strong>{{vm.tags.Host}}</li>
+    <li><strong>Virtual Machine Id: </strong>{{vm.vmId}}</li>
+    <br>
+  </ul>
+
+</div>

@@ -1,0 +1,22 @@
+<div class="databases" *ngFor="let database of databases">
+<h1 class="databasename"><strong>Name of Database: </strong>{{database.name}}</h1>
+<ul>
+  <li><strong>Database Id: </strong>{{database.databaseId}}</li>
+  <li><strong>Creation Date: </strong>{{database.creationDate}}</li>
+  <li><strong>Service Objective Name: </strong>{{database.currentServiceObjectiveName}}</li>
+  <li><strong>Location: </strong>{{database.location}}</li>
+  <li><strong>Secondary Location: </strong>{{database.defaultSecondaryLocation}}</li>
+  <li><strong>Edition: </strong>{{database.edition}}</li>
+  <li><strong>Elastic Pool Id: </strong>{{database.elasticPoolId}}</li>
+  <li><strong>Elastic Pool Name: </strong>{{database.elasticPoolName}}</li>
+  <li><strong>Failover Group Id: </strong>{{database.failoverGroupId}}</li>
+  <li><strong>Subscription Id: </strong>{{database.id.slice(15,51)}}</li>
+  <li><strong>Kind of System: </strong>{{database.kind}}</li>
+  <li><strong>Long Term Backup Resource Id: </strong>{{database.longTermRetentionBackupResourceId}}</li>
+  <li><strong>Managed By: </strong>{{database.managedBy.slice(15,51)}}</li>
+  <li><strong>Read Replica Count: </strong>{{database.readReplicaCount}}</li>
+  <li><strong>Resource Group Name: </strong>{{database.resourceGroup}}</li>
+  <li><strong>Status: </strong>{{database.status}}</li>
+  <li><strong>Type of Database: </strong>{{database.type}}</li>
+</ul>
+</div>

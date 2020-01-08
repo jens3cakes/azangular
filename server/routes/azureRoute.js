@@ -10,69 +10,69 @@ const ps = new Shell({
 const fs = require('fs');
 
 
-router.get('/accounts', (req,res) => {
+router.get('/accounts', (req, res) => {
   console.log('ps account')
   ps.addCommand('az account list');
   ps.invoke()
-  .then(response => {
-    fs.writeFile(`./src/app/pages/listAccounts/accountlist_${Date.now()}.txt`,response, (err)=>{
-      if(err) throw err;
-      console.log('file saved')
+    .then(response => {
+      fs.writeFile(`./src/app/pages/listAccounts/accountlist_${Date.now()}.txt`, response, (err) => {
+        if (err) throw err;
+        console.log('file saved')
+      })
+      res.json(JSON.parse(response))
     })
-    res.json(JSON.parse(response))
-  })
-  .catch(err => {
-    res.json(err)
-  });
+    .catch(err => {
+      res.json(err)
+    });
 });
 
 
-router.get('/account', (req, res)=> {
+router.get('/account', (req, res) => {
   console.log('ps show account')
   ps.addCommand('az account show');
   ps.invoke()
-  .then(response => {
-  res.json(JSON.parse(response))
-  })
-  .catch(err => {
-   res.json(err)
-  });
+    .then(response => {
+      res.json(JSON.parse(response))
+    })
+    .catch(err => {
+      res.json(err)
+    });
 });
 
-router.get('/subId', (req, res)=> {
+router.get('/subId', (req, res) => {
   console.log('ps sub id')
   ps.addCommand('az account show --query "[id,name]"');
   ps.invoke()
-  .then(response =>{
-    res.json(JSON.parse(response))
-  })
-  .catch(err => {
-    res.json(err)
-  });
+    .then(response => {
+      res.json(JSON.parse(response))
+    })
+    .catch(err => {
+      res.json(err)
+    });
 });
 
-router.get('/tenId', (req, res)=> {
+router.get('/tenId', (req, res) => {
   console.log('ps tenat id')
   ps.addCommand('az account show --query "tenantId"');
   ps.invoke()
-  .then(response =>{
-    res.json(response)
-  })
-  .catch(err => {
-    res.json(err)
-  })
+    .then(response => {
+      res.json(response)
+    })
+    .catch(err => {
+      res.json(err)
+    })
 })
 
-router.get('/grouplist/:subId', (req, res)=> {
+router.get('/grouplist/:subId', (req, res) => {
   console.log('g list by sub id', req.params.subId)
   ps.addCommand(`az group list --subscription ${req.params.subId}`);
   ps.invoke()
-  .then(response => {
-    res.json(JSON.parse(response))
-  })
-  .catch(err=>{
-    res.send(err)
-  });
+    .then(response => {
+      res.json(JSON.parse(response))
+    })
+    .catch(err => {
+      res.send(err)
+    });
 });
 
 router.get('/groups', (req, res) => {
@@ -81,49 +81,60 @@ router.get('/groups', (req, res) => {
   ps.invoke()
     .then(response => {
       res.json(JSON.parse(response))
-      console.log('azroute', typeof(JSON.parse(response)))
+      console.log('azroute', typeof (JSON.parse(response)))
     })
     .catch(err => {
       res.json(err)
     })
 });
 
-router.get('/user', (req, res)=>{
+router.get('/user', (req, res) => {
   console.log('ps users')
   ps.addCommand(`az role assignment list`);
   ps.invoke()
-  .then(response => {
-    console.log('hell')
-    res.json(JSON.parse(response))
-  })
-  .catch((err)=>{
-    res.json(err)
-  })
+    .then(response => {
+      console.log('hell')
+      res.json(JSON.parse(response))
+    })
+    .catch((err) => {
+      res.json(err)
+    })
 });
 
-router.get('/sql/:id', (req, res)=>{
+router.get('/sql/:id', (req, res) => {
   console.log('ps sql', req.params.id)
   ps.addCommand(`az sql server list --subscription ${req.params.id}`);
+  ps.invoke()
+    .then(response => {
+      res.json(JSON.parse(response))
+    })
+    .catch((err) => {
+      res.json(err)
+    })
+});
+
+router.get('/sqlDb/:group/:servename', (req, res) => {
+  console.log('ps db', req.params.group, req.params.servename)
+  ps.addCommand(`az sql db list -g ${req.params.group} -s ${req.params.servename}`)
+  ps.invoke()
+    .then((response) => {
+      res.json(JSON.parse(response))
+    })
+    .catch((err) => {
+      res.json(err)
+    })
+});
+
+router.get('/allVms', (req, res)=>{
+  console.log('ps vm')
+  ps.addCommand(`az vm list`);
   ps.invoke()
   .then(response =>{
     res.json(JSON.parse(response))
   })
   .catch((err)=>{
-     res.json(err)
+    res.json(err)
   })
-});
-
-router.get('/sqlDb/:group/:servename', (req, res)=>{
-  console.log('ps db')
-  ps.addCommand(`az sql db list -g ${group} -s ${servename}`, (req, res)=>{
-    ps.invoke()
-    .then(response => {
-      response.json(JSON.parse(response))
-    })
-    .catch((err)=>{
-      res.json(err)
-    })
-  })
-});
+})
 
 module.exports = router;

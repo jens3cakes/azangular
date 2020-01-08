@@ -92,7 +92,14 @@ export class BackendService {
   showDbList(group,servename){
     console.log('backend9', group, servename)
     const showDbListUrl = this.baseUrl + `/api/azure/sqlDb/${group}/${servename}`
-    return this.http.get(showDbListUrl, group, servename)
+    return this.http.get(showDbListUrl,{params:{group:group, servename:servename}})
+    .toPromise()
+  }
+
+  showVmList(){
+    console.log('backend11')
+    const showVmListUrl = this.baseUrl + `/api/azure/allVms`
+    return this.http.get(showVmListUrl)
     .toPromise()
   }
 

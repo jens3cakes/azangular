@@ -7,6 +7,8 @@ import { HeaderComponent } from './component/header/header.component';
 import { ListAccountsComponent } from './pages/listAccounts/listAccounts.component';
 import { ShowAccountComponent } from './pages/showAccount/showAccount.component';
 import { SqlServerComponent } from './pages/SqlServer/sqlServer.component';
+import { SqlDatabasesComponent } from './pages/SqlDatabases/sqlDatabases.component';
+import { AllVmsComponent } from './pages/AllVms/allVms.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -15,6 +17,8 @@ const routes: Routes = [
   { path: 'listAcc', component: ListAccountsComponent },
   { path: 'showAcc', component: ShowAccountComponent },
   { path: 'sqlServer/:id', component: SqlServerComponent},
+  { path: 'sqlDatabases/:group/:servename', component: SqlDatabasesComponent},
+  { path: 'allVms', component: AllVmsComponent },
   { path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 
