@@ -1,0 +1,608 @@
+[
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/networkWatchers/NetworkWatcher_eastus",
+    "identity": null,
+    "kind": null,
+    "location": "eastus",
+    "managedBy": null,
+    "name": "NetworkWatcher_eastus",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "NetworkWatcherRG",
+    "sku": null,
+    "tags": null,
+    "type": "Microsoft.Network/networkWatchers"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/NetworkWatcherRG/providers/Microsoft.Network/networkWatchers/NetworkWatcher_westus2",
+    "identity": null,
+    "kind": null,
+    "location": "westus2",
+    "managedBy": null,
+    "name": "NetworkWatcher_westus2",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "NetworkWatcherRG",
+    "sku": null,
+    "tags": null,
+    "type": "Microsoft.Network/networkWatchers"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/microsoft.alertsManagement/smartDetectorAlertRules/Failure Anomalies - azangular",
+    "identity": null,
+    "kind": null,
+    "location": "global",
+    "managedBy": null,
+    "name": "Failure Anomalies - azangular",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": null,
+    "tags": {},
+    "type": "microsoft.alertsManagement/smartDetectorAlertRules"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Automation/automationAccounts/VMControl",
+    "identity": null,
+    "kind": null,
+    "location": "westus2",
+    "managedBy": null,
+    "name": "VMControl",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": null,
+    "tags": {},
+    "type": "Microsoft.Automation/automationAccounts"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Automation/automationAccounts/VMControl/runbooks/AzureAutomationTutorial",
+    "identity": null,
+    "kind": null,
+    "location": "westus2",
+    "managedBy": null,
+    "name": "VMControl/AzureAutomationTutorial",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": null,
+    "tags": {},
+    "type": "Microsoft.Automation/automationAccounts/runbooks"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Automation/automationAccounts/VMControl/runbooks/AzureAutomationTutorialPython2",
+    "identity": null,
+    "kind": null,
+    "location": "westus2",
+    "managedBy": null,
+    "name": "VMControl/AzureAutomationTutorialPython2",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": null,
+    "tags": {},
+    "type": "Microsoft.Automation/automationAccounts/runbooks"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Automation/automationAccounts/VMControl/runbooks/AzureAutomationTutorialScript",
+    "identity": null,
+    "kind": null,
+    "location": "westus2",
+    "managedBy": null,
+    "name": "VMControl/AzureAutomationTutorialScript",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": null,
+    "tags": {},
+    "type": "Microsoft.Automation/automationAccounts/runbooks"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Compute/availabilitySets/testeravailable",
+    "identity": null,
+    "kind": null,
+    "location": "westus2",
+    "managedBy": null,
+    "name": "testeravailable",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": {
+      "capacity": null,
+      "family": null,
+      "model": null,
+      "name": "Aligned",
+      "size": null,
+      "tier": null
+    },
+    "tags": {
+      "availability": "set1"
+    },
+    "type": "Microsoft.Compute/availabilitySets"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Compute/disks/DC01-DataDisk01",
+    "identity": null,
+    "kind": null,
+    "location": "westus2",
+    "managedBy": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Compute/virtualMachines/TesterServer",
+    "name": "DC01-DataDisk01",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": {
+      "capacity": null,
+      "family": null,
+      "model": null,
+      "name": "Standard_LRS",
+      "size": null,
+      "tier": "Standard"
+    },
+    "tags": {},
+    "type": "Microsoft.Compute/disks"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/TESTER/providers/Microsoft.Compute/disks/HostOne_OsDisk_1_5ceadc2afc7140f2acf76860120e9c8b",
+    "identity": null,
+    "kind": null,
+    "location": "westus2",
+    "managedBy": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Compute/virtualMachines/HostOne",
+    "name": "HostOne_OsDisk_1_5ceadc2afc7140f2acf76860120e9c8b",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "TESTER",
+    "sku": {
+      "capacity": null,
+      "family": null,
+      "model": null,
+      "name": "Standard_LRS",
+      "size": null,
+      "tier": "Standard"
+    },
+    "tags": {
+      "Host": "WindowsBox"
+    },
+    "type": "Microsoft.Compute/disks"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/TESTER/providers/Microsoft.Compute/disks/TesterServer_OsDisk_1_ffa8d503f1904bbf952e88609059bdda",
+    "identity": null,
+    "kind": null,
+    "location": "westus2",
+    "managedBy": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Compute/virtualMachines/TesterServer",
+    "name": "TesterServer_OsDisk_1_ffa8d503f1904bbf952e88609059bdda",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "TESTER",
+    "sku": {
+      "capacity": null,
+      "family": null,
+      "model": null,
+      "name": "Standard_LRS",
+      "size": null,
+      "tier": "Standard"
+    },
+    "tags": {
+      "VirtualMachine": "Server"
+    },
+    "type": "Microsoft.Compute/disks"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Compute/virtualMachines/HostOne",
+    "identity": null,
+    "kind": null,
+    "location": "westus2",
+    "managedBy": null,
+    "name": "HostOne",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": null,
+    "tags": {
+      "Host": "WindowsBox"
+    },
+    "type": "Microsoft.Compute/virtualMachines"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Compute/virtualMachines/HostOne/extensions/enablevmaccess",
+    "identity": null,
+    "kind": null,
+    "location": "westus2",
+    "managedBy": null,
+    "name": "HostOne/enablevmaccess",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": null,
+    "tags": null,
+    "type": "Microsoft.Compute/virtualMachines/extensions"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Compute/virtualMachines/TesterServer",
+    "identity": null,
+    "kind": null,
+    "location": "westus2",
+    "managedBy": null,
+    "name": "TesterServer",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": null,
+    "tags": {
+      "VirtualMachine": "Server"
+    },
+    "type": "Microsoft.Compute/virtualMachines"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Compute/virtualMachines/TesterServer/extensions/enablevmaccess",
+    "identity": null,
+    "kind": null,
+    "location": "westus2",
+    "managedBy": null,
+    "name": "TesterServer/enablevmaccess",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": null,
+    "tags": null,
+    "type": "Microsoft.Compute/virtualMachines/extensions"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.DBforMySQL/servers/chort3test",
+    "identity": null,
+    "kind": null,
+    "location": "centralus",
+    "managedBy": null,
+    "name": "chort3test",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": {
+      "capacity": 2,
+      "family": "Gen5",
+      "model": null,
+      "name": "B_Gen5_2",
+      "size": null,
+      "tier": "Basic"
+    },
+    "tags": {
+      "Server": "MySQL"
+    },
+    "type": "Microsoft.DBforMySQL/servers"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/microsoft.insights/actiongroups/Application Insights Smart Detection",
+    "identity": null,
+    "kind": null,
+    "location": "global",
+    "managedBy": null,
+    "name": "Application Insights Smart Detection",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": null,
+    "tags": null,
+    "type": "microsoft.insights/actiongroups"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/microsoft.insights/components/azangular",
+    "identity": null,
+    "kind": "web",
+    "location": "westus2",
+    "managedBy": null,
+    "name": "azangular",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": null,
+    "tags": {
+      "Application": "WindowsBox"
+    },
+    "type": "microsoft.insights/components"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Network/networkInterfaces/hostone882",
+    "identity": null,
+    "kind": null,
+    "location": "westus2",
+    "managedBy": null,
+    "name": "hostone882",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": null,
+    "tags": {
+      "Host": "WindowsBox"
+    },
+    "type": "Microsoft.Network/networkInterfaces"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Network/networkInterfaces/testerserver980",
+    "identity": null,
+    "kind": null,
+    "location": "westus2",
+    "managedBy": null,
+    "name": "testerserver980",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": null,
+    "tags": {
+      "VirtualMachine": "Server"
+    },
+    "type": "Microsoft.Network/networkInterfaces"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Network/networkSecurityGroups/HostOne-nsg",
+    "identity": null,
+    "kind": null,
+    "location": "westus2",
+    "managedBy": null,
+    "name": "HostOne-nsg",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": null,
+    "tags": {
+      "Host": "WindowsBox"
+    },
+    "type": "Microsoft.Network/networkSecurityGroups"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Network/networkSecurityGroups/TesterServer-nsg",
+    "identity": null,
+    "kind": null,
+    "location": "westus2",
+    "managedBy": null,
+    "name": "TesterServer-nsg",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": null,
+    "tags": {
+      "VirtualMachine": "Server"
+    },
+    "type": "Microsoft.Network/networkSecurityGroups"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Network/publicIPAddresses/HostOne-ip",
+    "identity": null,
+    "kind": null,
+    "location": "westus2",
+    "managedBy": null,
+    "name": "HostOne-ip",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": {
+      "capacity": null,
+      "family": null,
+      "model": null,
+      "name": "Basic",
+      "size": null,
+      "tier": null
+    },
+    "tags": {
+      "Host": "WindowsBox"
+    },
+    "type": "Microsoft.Network/publicIPAddresses"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Network/publicIPAddresses/TesterServer-ip",
+    "identity": null,
+    "kind": null,
+    "location": "westus2",
+    "managedBy": null,
+    "name": "TesterServer-ip",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": {
+      "capacity": null,
+      "family": null,
+      "model": null,
+      "name": "Standard",
+      "size": null,
+      "tier": null
+    },
+    "tags": {
+      "VirtualMachine": "Server"
+    },
+    "type": "Microsoft.Network/publicIPAddresses"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Network/virtualNetworks/Testernet",
+    "identity": null,
+    "kind": null,
+    "location": "westus2",
+    "managedBy": null,
+    "name": "Testernet",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": null,
+    "tags": null,
+    "type": "Microsoft.Network/virtualNetworks"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Sql/servers/testersqlserver",
+    "identity": null,
+    "kind": "v12.0",
+    "location": "westus2",
+    "managedBy": null,
+    "name": "testersqlserver",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": null,
+    "tags": {},
+    "type": "Microsoft.Sql/servers"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Sql/servers/testersqlserver/databases/master",
+    "identity": null,
+    "kind": "v12.0,system",
+    "location": "westus2",
+    "managedBy": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Sql/servers/testersqlserver",
+    "name": "testersqlserver/master",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": {
+      "capacity": 0,
+      "family": null,
+      "model": null,
+      "name": "System",
+      "size": null,
+      "tier": "System"
+    },
+    "tags": null,
+    "type": "Microsoft.Sql/servers/databases"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Sql/servers/testersqlserver/databases/testerSQL",
+    "identity": null,
+    "kind": "v12.0,user",
+    "location": "westus2",
+    "managedBy": null,
+    "name": "testersqlserver/testerSQL",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": {
+      "capacity": 5,
+      "family": null,
+      "model": null,
+      "name": "Basic",
+      "size": null,
+      "tier": "Basic"
+    },
+    "tags": {},
+    "type": "Microsoft.Sql/servers/databases"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Storage/storageAccounts/testerdiag826",
+    "identity": null,
+    "kind": "Storage",
+    "location": "westus2",
+    "managedBy": null,
+    "name": "testerdiag826",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": {
+      "capacity": null,
+      "family": null,
+      "model": null,
+      "name": "Standard_LRS",
+      "size": null,
+      "tier": "Standard"
+    },
+    "tags": {
+      "VirtualMachine": "Server"
+    },
+    "type": "Microsoft.Storage/storageAccounts"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Web/serverFarms/ASP-tester-b1e5",
+    "identity": null,
+    "kind": "linux",
+    "location": "westus2",
+    "managedBy": null,
+    "name": "ASP-tester-b1e5",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": {
+      "capacity": 1,
+      "family": "F",
+      "model": null,
+      "name": "F1",
+      "size": "F1",
+      "tier": "Free"
+    },
+    "tags": {
+      "App": "Testing"
+    },
+    "type": "Microsoft.Web/serverFarms"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Web/sites/cohort3",
+    "identity": null,
+    "kind": "app,linux",
+    "location": "westus2",
+    "managedBy": null,
+    "name": "cohort3",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "tester",
+    "sku": null,
+    "tags": {
+      "App": "Testing"
+    },
+    "type": "Microsoft.Web/sites"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/windowboxtester/providers/microsoft.alertsManagement/smartDetectorAlertRules/Failure Anomalies - boxtester",
+    "identity": null,
+    "kind": null,
+    "location": "global",
+    "managedBy": null,
+    "name": "Failure Anomalies - boxtester",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "windowboxtester",
+    "sku": null,
+    "tags": {},
+    "type": "microsoft.alertsManagement/smartDetectorAlertRules"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/windowboxtester/providers/microsoft.insights/components/boxtester",
+    "identity": null,
+    "kind": "web",
+    "location": "westus2",
+    "managedBy": null,
+    "name": "boxtester",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "windowboxtester",
+    "sku": null,
+    "tags": {},
+    "type": "microsoft.insights/components"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/windowboxtester/providers/Microsoft.Web/serverFarms/ASP-windowboxtester-b881",
+    "identity": null,
+    "kind": "app",
+    "location": "westus2",
+    "managedBy": null,
+    "name": "ASP-windowboxtester-b881",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "windowboxtester",
+    "sku": {
+      "capacity": 1,
+      "family": "S",
+      "model": null,
+      "name": "S1",
+      "size": "S1",
+      "tier": "Standard"
+    },
+    "tags": {},
+    "type": "Microsoft.Web/serverFarms"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/windowboxtester/providers/Microsoft.Web/sites/boxtester",
+    "identity": null,
+    "kind": "app",
+    "location": "westus2",
+    "managedBy": null,
+    "name": "boxtester",
+    "plan": null,
+    "properties": null,
+    "resourceGroup": "windowboxtester",
+    "sku": null,
+    "tags": {},
+    "type": "Microsoft.Web/sites"
+  }
+]

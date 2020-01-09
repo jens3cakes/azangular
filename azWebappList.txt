@@ -1,0 +1,78 @@
+[
+  {
+    "appServicePlanId": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Web/serverfarms/ASP-tester-b1e5",
+    "availabilityState": "Normal",
+    "clientAffinityEnabled": false,
+    "clientCertEnabled": false,
+    "clientCertExclusionPaths": null,
+    "cloningInfo": null,
+    "containerSize": 0,
+    "dailyMemoryTimeQuota": 0,
+    "defaultHostName": "cohort3.azurewebsites.net",
+    "enabled": true,
+    "enabledHostNames": [
+      "cohort3.azurewebsites.net",
+      "cohort3.scm.azurewebsites.net"
+    ],
+    "geoDistributions": null,
+    "hostNameSslStates": [
+      {
+        "hostType": "Standard",
+        "ipBasedSslResult": null,
+        "ipBasedSslState": "NotConfigured",
+        "name": "cohort3.azurewebsites.net",
+        "sslState": "Disabled",
+        "thumbprint": null,
+        "toUpdate": null,
+        "toUpdateIpBasedSsl": null,
+        "virtualIp": null
+      },
+      {
+        "hostType": "Repository",
+        "ipBasedSslResult": null,
+        "ipBasedSslState": "NotConfigured",
+        "name": "cohort3.scm.azurewebsites.net",
+        "sslState": "Disabled",
+        "thumbprint": null,
+        "toUpdate": null,
+        "toUpdateIpBasedSsl": null,
+        "virtualIp": null
+      }
+    ],
+    "hostNames": [
+      "cohort3.azurewebsites.net"
+    ],
+    "hostNamesDisabled": false,
+    "hostingEnvironmentProfile": null,
+    "httpsOnly": false,
+    "hyperV": false,
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Web/sites/cohort3",
+    "identity": null,
+    "inProgressOperationId": null,
+    "isDefaultContainer": null,
+    "isXenon": false,
+    "kind": "app,linux",
+    "lastModifiedTimeUtc": "2019-12-31T06:57:11.370000",
+    "location": "West US 2",
+    "maxNumberOfWorkers": null,
+    "name": "cohort3",
+    "outboundIpAddresses": "13.77.182.13,13.77.161.10,52.183.26.12,52.175.235.45,13.77.178.124",
+    "possibleOutboundIpAddresses": "13.77.182.13,13.77.161.10,52.183.26.12,52.175.235.45,13.77.178.124,52.183.34.217,13.66.206.87,13.77.172.226,52.183.34.132,13.77.180.8",
+    "redundancyMode": "None",
+    "repositorySiteName": "cohort3",
+    "reserved": true,
+    "resourceGroup": "tester",
+    "scmSiteAlsoStopped": false,
+    "siteConfig": null,
+    "slotSwapStatus": null,
+    "state": "Running",
+    "suspendedTill": null,
+    "tags": {
+      "App": "Testing"
+    },
+    "targetSwapSlot": null,
+    "trafficManagerHostNames": null,
+    "type": "Microsoft.Web/sites",
+    "usageState": "Normal"
+  }
+]

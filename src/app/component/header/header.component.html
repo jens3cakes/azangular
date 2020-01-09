@@ -1,15 +1,17 @@
 <h1>{{title}}</h1>
 <div class="buttons">
 
-    <h2><button (click)="login()">Login to Azure</button>
+  <h2><button (click)="login()">Login to Azure</button>
 
-      <span> <button (click)="accountList()" *ngIf="isLoggedIn" >Account Info</button></span>
+    <span> <button (click)="accountList()" *ngIf="isLoggedIn">Account Info</button></span>
 
-      <span><button (click)="allResourceGroupsList()" *ngIf="isLoggedIn">Resource Groups</button></span>
+    <span><button (click)="allResourceGroupsList()" *ngIf="isLoggedIn">Resource Groups</button></span>
 
-      <span><button (click)="viewAllVms()" *ngIf='isLoggedIn'>Virtual Machines</button></span>
+    <span><button (click)="viewAllVms()" *ngIf='isLoggedIn'>Virtual Machines</button></span>
 
-      <button (click)="logout()" *ngIf="isLoggedIn">Logout of Azure</button></h2>
+    <span><button (click)='vnetList()' *ngIf='isLoggedIn'>Virtual Networks</button></span>
+
+    <button (click)="logout()" *ngIf="isLoggedIn">Logout of Azure</button></h2>
 
 </div>
 <!-- 

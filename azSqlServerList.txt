@@ -1,0 +1,17 @@
+[
+  {
+    "administratorLogin": "godmode",
+    "administratorLoginPassword": null,
+    "fullyQualifiedDomainName": "testersqlserver.database.windows.net",
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Sql/servers/testersqlserver",
+    "identity": null,
+    "kind": "v12.0",
+    "location": "westus2",
+    "name": "testersqlserver",
+    "resourceGroup": "tester",
+    "state": "Ready",
+    "tags": {},
+    "type": "Microsoft.Sql/servers",
+    "version": "12.0"
+  }
+]

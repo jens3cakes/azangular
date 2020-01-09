@@ -137,4 +137,16 @@ router.get('/allVms', (req, res)=>{
   })
 })
 
+router.get('/all_vnets', (req, res)=>{
+  console.log('ps vnet')
+  ps.addCommand(`az network vnet list`);
+  ps.invoke()
+  .then((response)=>{
+    res.json(JSON.parse(response))
+  })
+  .catch((err)=> {
+    res.json(err)
+  })
+});
+
 module.exports = router;

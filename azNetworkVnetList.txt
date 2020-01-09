@@ -1,0 +1,77 @@
+[
+  {
+    "addressSpace": {
+      "addressPrefixes": [
+        "10.2.0.0/16"
+      ]
+    },
+    "bgpCommunities": null,
+    "ddosProtectionPlan": null,
+    "dhcpOptions": {
+      "dnsServers": [
+        "10.1.0.5"
+      ]
+    },
+    "enableDdosProtection": false,
+    "enableVmProtection": false,
+    "etag": "W/\"0f013e19-c0a0-4bf2-b5df-a1eb8768e349\"",
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Network/virtualNetworks/Testernet",
+    "location": "westus2",
+    "name": "Testernet",
+    "provisioningState": "Succeeded",
+    "resourceGroup": "tester",
+    "resourceGuid": "39a1894a-a410-47a8-88fd-9061e327c4f9",
+    "subnets": [
+      {
+        "addressPrefix": "10.2.0.0/16",
+        "addressPrefixes": null,
+        "delegations": [],
+        "etag": "W/\"0f013e19-c0a0-4bf2-b5df-a1eb8768e349\"",
+        "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Network/virtualNetworks/Testernet/subnets/default",
+        "ipConfigurationProfiles": null,
+        "ipConfigurations": [
+          {
+            "etag": null,
+            "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Network/networkInterfaces/testerserver980/ipConfigurations/ipconfig1",
+            "name": null,
+            "privateIpAddress": null,
+            "privateIpAllocationMethod": null,
+            "provisioningState": null,
+            "publicIpAddress": null,
+            "resourceGroup": "tester",
+            "subnet": null
+          },
+          {
+            "etag": null,
+            "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Network/networkInterfaces/hostone882/ipConfigurations/ipconfig1",
+            "name": null,
+            "privateIpAddress": null,
+            "privateIpAllocationMethod": null,
+            "provisioningState": null,
+            "publicIpAddress": null,
+            "resourceGroup": "tester",
+            "subnet": null
+          }
+        ],
+        "name": "default",
+        "natGateway": null,
+        "networkSecurityGroup": null,
+        "privateEndpointNetworkPolicies": "Enabled",
+        "privateEndpoints": null,
+        "privateLinkServiceNetworkPolicies": "Enabled",
+        "provisioningState": "Succeeded",
+        "purpose": null,
+        "resourceGroup": "tester",
+        "resourceNavigationLinks": null,
+        "routeTable": null,
+        "serviceAssociationLinks": null,
+        "serviceEndpointPolicies": null,
+        "serviceEndpoints": [],
+        "type": "Microsoft.Network/virtualNetworks/subnets"
+      }
+    ],
+    "tags": null,
+    "type": "Microsoft.Network/virtualNetworks",
+    "virtualNetworkPeerings": []
+  }
+]

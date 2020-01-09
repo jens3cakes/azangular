@@ -1,0 +1,238 @@
+[
+  {
+    "additionalCapabilities": null,
+    "availabilitySet": null,
+    "billingProfile": null,
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "https://testerdiag826.blob.core.windows.net/"
+      }
+    },
+    "evictionPolicy": null,
+    "hardwareProfile": {
+      "vmSize": "Standard_B1ms"
+    },
+    "host": null,
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/TESTER/providers/Microsoft.Compute/virtualMachines/HostOne",
+    "identity": null,
+    "instanceView": null,
+    "licenseType": "Windows_Client",
+    "location": "westus2",
+    "name": "HostOne",
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Network/networkInterfaces/hostone882",
+          "primary": null,
+          "resourceGroup": "tester"
+        }
+      ]
+    },
+    "osProfile": {
+      "adminPassword": null,
+      "adminUsername": "godmode",
+      "allowExtensionOperations": true,
+      "computerName": "HostOne",
+      "customData": null,
+      "linuxConfiguration": null,
+      "requireGuestProvisionSignal": true,
+      "secrets": [],
+      "windowsConfiguration": {
+        "additionalUnattendContent": null,
+        "enableAutomaticUpdates": true,
+        "provisionVmAgent": true,
+        "timeZone": null,
+        "winRm": null
+      }
+    },
+    "plan": null,
+    "priority": null,
+    "provisioningState": "Succeeded",
+    "proximityPlacementGroup": null,
+    "resourceGroup": "TESTER",
+    "resources": [
+      {
+        "autoUpgradeMinorVersion": null,
+        "forceUpdateTag": null,
+        "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/TESTER/providers/Microsoft.Compute/virtualMachines/HostOne/extensions/enablevmaccess",
+        "instanceView": null,
+        "location": null,
+        "name": null,
+        "protectedSettings": null,
+        "provisioningState": null,
+        "publisher": null,
+        "resourceGroup": "TESTER",
+        "settings": null,
+        "tags": null,
+        "type": null,
+        "typeHandlerVersion": null,
+        "virtualMachineExtensionType": null
+      }
+    ],
+    "storageProfile": {
+      "dataDisks": [],
+      "imageReference": {
+        "exactVersion": "17763.914.1912042330",
+        "id": null,
+        "offer": "Windows-10",
+        "publisher": "MicrosoftWindowsDesktop",
+        "sku": "rs5-pro",
+        "version": "latest"
+      },
+      "osDisk": {
+        "caching": "ReadWrite",
+        "createOption": "FromImage",
+        "diffDiskSettings": null,
+        "diskSizeGb": null,
+        "encryptionSettings": null,
+        "image": null,
+        "managedDisk": {
+          "diskEncryptionSet": null,
+          "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/TESTER/providers/Microsoft.Compute/disks/HostOne_OsDisk_1_5ceadc2afc7140f2acf76860120e9c8b",
+          "resourceGroup": "TESTER",
+          "storageAccountType": null
+        },
+        "name": "HostOne_OsDisk_1_5ceadc2afc7140f2acf76860120e9c8b",
+        "osType": "Windows",
+        "vhd": null,
+        "writeAcceleratorEnabled": null
+      }
+    },
+    "tags": {
+      "Host": "WindowsBox"
+    },
+    "type": "Microsoft.Compute/virtualMachines",
+    "virtualMachineScaleSet": null,
+    "vmId": "90712042-f29a-4faa-a692-54e91a51da2e",
+    "zones": null
+  },
+  {
+    "additionalCapabilities": null,
+    "availabilitySet": null,
+    "billingProfile": null,
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true,
+        "storageUri": "https://testerdiag826.blob.core.windows.net/"
+      }
+    },
+    "evictionPolicy": null,
+    "hardwareProfile": {
+      "vmSize": "Standard_B1ms"
+    },
+    "host": null,
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/TESTER/providers/Microsoft.Compute/virtualMachines/TesterServer",
+    "identity": null,
+    "instanceView": null,
+    "licenseType": null,
+    "location": "westus2",
+    "name": "TesterServer",
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Network/networkInterfaces/testerserver980",
+          "primary": null,
+          "resourceGroup": "tester"
+        }
+      ]
+    },
+    "osProfile": {
+      "adminPassword": null,
+      "adminUsername": "testeradmin",
+      "allowExtensionOperations": true,
+      "computerName": "TesterServer",
+      "customData": null,
+      "linuxConfiguration": null,
+      "requireGuestProvisionSignal": true,
+      "secrets": [],
+      "windowsConfiguration": {
+        "additionalUnattendContent": null,
+        "enableAutomaticUpdates": true,
+        "provisionVmAgent": true,
+        "timeZone": null,
+        "winRm": null
+      }
+    },
+    "plan": null,
+    "priority": null,
+    "provisioningState": "Failed",
+    "proximityPlacementGroup": null,
+    "resourceGroup": "TESTER",
+    "resources": [
+      {
+        "autoUpgradeMinorVersion": null,
+        "forceUpdateTag": null,
+        "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/TESTER/providers/Microsoft.Compute/virtualMachines/TesterServer/extensions/enablevmaccess",
+        "instanceView": null,
+        "location": null,
+        "name": null,
+        "protectedSettings": null,
+        "provisioningState": null,
+        "publisher": null,
+        "resourceGroup": "TESTER",
+        "settings": null,
+        "tags": null,
+        "type": null,
+        "typeHandlerVersion": null,
+        "virtualMachineExtensionType": null
+      }
+    ],
+    "storageProfile": {
+      "dataDisks": [
+        {
+          "caching": "None",
+          "createOption": "Attach",
+          "diskIopsReadWrite": null,
+          "diskMbpsReadWrite": null,
+          "diskSizeGb": 10,
+          "image": null,
+          "lun": 0,
+          "managedDisk": {
+            "diskEncryptionSet": null,
+            "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/TESTER/providers/Microsoft.Compute/disks/DC01-DataDisk01",
+            "resourceGroup": "TESTER",
+            "storageAccountType": "Standard_LRS"
+          },
+          "name": "DC01-DataDisk01",
+          "toBeDetached": false,
+          "vhd": null,
+          "writeAcceleratorEnabled": null
+        }
+      ],
+      "imageReference": {
+        "exactVersion": "14393.3326.1911120150",
+        "id": null,
+        "offer": "WindowsServer",
+        "publisher": "MicrosoftWindowsServer",
+        "sku": "2016-Datacenter",
+        "version": "latest"
+      },
+      "osDisk": {
+        "caching": "ReadWrite",
+        "createOption": "FromImage",
+        "diffDiskSettings": null,
+        "diskSizeGb": 127,
+        "encryptionSettings": null,
+        "image": null,
+        "managedDisk": {
+          "diskEncryptionSet": null,
+          "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/TESTER/providers/Microsoft.Compute/disks/TesterServer_OsDisk_1_ffa8d503f1904bbf952e88609059bdda",
+          "resourceGroup": "TESTER",
+          "storageAccountType": "Standard_LRS"
+        },
+        "name": "TesterServer_OsDisk_1_ffa8d503f1904bbf952e88609059bdda",
+        "osType": "Windows",
+        "vhd": null,
+        "writeAcceleratorEnabled": null
+      }
+    },
+    "tags": {
+      "VirtualMachine": "Server"
+    },
+    "type": "Microsoft.Compute/virtualMachines",
+    "virtualMachineScaleSet": null,
+    "vmId": "2386600b-715e-42e0-91fc-046f892a52b1",
+    "zones": null
+  }
+]

@@ -103,6 +103,13 @@ export class BackendService {
     .toPromise()
   }
 
+  showVnetList(){
+    console.log('backend12')
+    const showVnetListUrl = this.baseUrl + `/api/azure/all_vnets`
+    return this.http.get(showVnetListUrl)
+    .toPromise()
+  }
+
   logout() {
     console.log('backend10')
     const logoutUrl = this.baseUrl + '/api/logout'

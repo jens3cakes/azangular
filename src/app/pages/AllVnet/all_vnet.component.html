@@ -1,0 +1,47 @@
+<h1>{{title}}</h1>
+<div *ngFor='let vnet of vnets'>
+  <h2 class="name">{{vnet.addressSpace.addressPrefixes}}</h2>
+  <ul class="data">
+    <li><strong>Network CIDR range: </strong>{{vnet.addressSpace.addressPrefixes}}</li>
+    <li><strong>DDOS Protection Plan: </strong>{{vnet.ddosProtectionPlan}}</li>
+    <li><strong>DHCP Options: <br>DNS Servers: </strong>{{vnet.dhcpOptions.dnsServers}}</li>
+    <li><strong>Enable DDOS Protection: </strong>{{vnet.enableDdosProtection}}</li>
+    <li><strong>Enable Vm Protection: </strong>{{vnet.enableVmProtection}}</li>
+    <li><strong>ETag: </strong>{{vnet.etag}}</li>
+    <li><strong>Subscription Id: </strong>{{vnet.id}}</li>
+    <li><strong>Location: </strong>{{vnet.location}}</li>
+    <li><strong>Network Name: </strong>{{vnet.name}}</li>
+    <li><strong>Provisioning State: </strong>{{vnet.provisioningState}}</li>
+    <li><strong>Resource Group: </strong>{{vnet.resourceGroup}}</li>
+    <li><strong>Resource GUId</strong>{{vnet.resourceGuid}}</li>
+    <div *ngFor='let subnet of vnet.subnets'>
+      <li><strong>Subnets: </strong>{{subnet.addressPrefix}}</li>
+      <li><strong>ETag: </strong>{{subnet.etag}}</li>
+      <li><strong>Id: </strong>{{subnet.id}}</li>
+      <li><strong>Ip Configuration Profiles: </strong>{{subnet.ipConfigurationProfiles}}</li>
+      <div *ngFor='let ipConfiguration of subnet.ipConfigurations'>
+        <li><strong>Ip Configuration ETag: </strong>{{ipConfiguration.etag}}</li>
+        <li><strong>Ip Configuration Id: </strong>{{ipConfiguration.id}}</li>
+        <li><strong>Ip Configuration name: </strong>{{ipConfiguration.name}}</li>
+        <li><strong>Ip Configuration Private Ip Address: </strong>{{ipConfiguration.privateIpAddress}}</li>
+        <li><strong>Ip Configuration Public Ip Address: </strong>{{ipConfiguration.publicIpAddress}}</li>
+        <li><strong>Resource Group: </strong>{{ipConfiguration.resourceGroup}}</li>
+      </div>
+      <li><strong>Name: </strong>{{subnet.name}}</li>
+      <li><strong>NAT Gateway: </strong>{{subnet.natGateway}}</li>
+      <li><strong>Network Security Group: </strong>{{subnet.networkSecurityGroup}}</li>
+      <li><strong>Private Endpoint Network Policies: </strong>{{subnet.privateEndpointNetworkPolicies}}</li>
+      <li><strong>Private Endpoints: </strong>{{subnet.privateEndpoints}}</li>
+      <li><strong>Private Link Service Network Policies: </strong>{{subnet.privateLinkServiceNetworkPolicies}}</li>
+      <li><strong>Provisioning State: </strong>{{subnet.provisioningState}}</li>
+      <li><strong>Route Table: </strong>{{subnet.routeTable}}</li>
+      <li><strong>Service Association Links: </strong>{{subnet.serviceAssociationLinks}}</li>
+      <li><strong>Service Endpoint Policies: </strong>{{subnet.serviceEndpointPolicies}}</li>
+      <li><strong>Service Endpoints: </strong>{{subnet.serviceEndpoints}}</li>
+      <li><strong>Subnet Type: </strong>{{subnet.type}}</li>
+    </div>
+    <li><strong>Tags: </strong>{{vnet.tags}}</li>
+    <li><strong>Type of Network:</strong>{{vnet.type}}</li>
+    <li><strong>Virtual Network Peerings: </strong>{{vnet.virtualNetworkPeerings}}</li>
+  </ul>
+</div>

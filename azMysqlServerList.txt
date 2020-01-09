@@ -1,0 +1,35 @@
+[
+  {
+    "administratorLogin": "godmode",
+    "earliestRestoreDate": "2020-01-02T09:45:44.947469+00:00",
+    "fullyQualifiedDomainName": "chort3test.mysql.database.azure.com",
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.DBforMySQL/servers/chort3test",
+    "location": "centralus",
+    "masterServerId": "",
+    "name": "chort3test",
+    "replicaCapacity": null,
+    "replicationRole": "",
+    "resourceGroup": "tester",
+    "sku": {
+      "capacity": 2,
+      "family": "Gen5",
+      "name": "B_Gen5_2",
+      "size": null,
+      "tier": "Basic"
+    },
+    "sslEnforcement": "Enabled",
+    "storageProfile": {
+      "backupRetentionDays": 7,
+      "geoRedundantBackup": "Disabled",
+      "storageAutoGrow": "Disabled",
+      "storageAutogrow": null,
+      "storageMb": 10240
+    },
+    "tags": {
+      "Server": "MySQL"
+    },
+    "type": "Microsoft.DBforMySQL/servers",
+    "userVisibleState": "Ready",
+    "version": "5.7"
+  }
+]

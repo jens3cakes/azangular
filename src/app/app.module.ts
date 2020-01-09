@@ -14,6 +14,7 @@ import { ShowAccountComponent } from './pages/showAccount/showAccount.component'
 import { SqlServerComponent } from './pages/SqlServer/sqlServer.component';
 import { SqlDatabasesComponent } from './pages/SqlDatabases/sqlDatabases.component';
 import { AllVmsComponent } from './pages/AllVms/allVms.component';
+import { AllVnetComponent } from './pages/AllVnet/all_vnet.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { AllVmsComponent } from './pages/AllVms/allVms.component';
     ShowAccountComponent,
     SqlServerComponent,
     SqlDatabasesComponent,
-    AllVmsComponent
+    AllVmsComponent,
+    AllVnetComponent
   ],
   imports: [
     BrowserModule,
