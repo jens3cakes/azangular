@@ -1,4 +1,8 @@
-<h1>{{title}}</h1>
+<body>
+ <div class="header">
+   <img src="../../../assets/Azurite.png" alt="logo">
+<h1 id='titleHeader'>{{title}}</h1>
+ </div>
 <div class="buttons">
 
   <h2><button (click)="login()">Login to Azure</button>
@@ -14,26 +18,5 @@
     <button (click)="logout()" *ngIf="isLoggedIn">Logout of Azure</button></h2>
 
 </div>
-<!-- 
-  <div class="accounts" *ngFor="let account of accounts">
-    <div><strong>Account</strong></div>
-    <div><strong>Cloud Name: </strong>{{account.cloudName}}</div>
-    <div><strong>Account 1:</strong>{{account.id}}</div>
-    <div><strong>Default account: </strong>{{account.isDefault}}</div>
-    <div><strong>Account name: </strong>{{account.name}}</div>
-    <div><strong>Status of State: </strong>{{account.state}}</div>
-    <div><strong>Tenant Id: </strong>{{account.tenantId}}</div>
-    <div><strong>User Name: </strong>{{account.user.name}}</div>
-    <div><strong>Type of user: </strong>{{account.user.type}}</div>
-    <br>
-  
-</div>
 
-<div class="resourceGroup" *ngFor="let resourceGroup of resourceGroups">
-  <div><strong>Resource Groups</strong></div>
-  <div><strong>Name: </strong> {{resourceGroup.name}}</div>
-  <div><strong>Subscription Id: </strong>{{resourceGroup.id.slice(15,51)}}</div>
-  <div><strong>Location: </strong>{{resourceGroup.location}}</div>
-  <div><strong>Managed by: </strong>{{resourceGroup.managedBy}}</div>
-  <div><strong>State of virtual machine: </strong>{{resourceGroup.properties.provisioningState}}</div>
-</div> -->
+</body>

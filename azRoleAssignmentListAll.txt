@@ -1,0 +1,90 @@
+[
+  {
+    "canDelegate": null,
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/providers/Microsoft.Authorization/roleAssignments/cefaddec-0469-44e9-af0e-3f67b9031de8",
+    "name": "cefaddec-0469-44e9-af0e-3f67b9031de8",
+    "principalId": "ffcadb62-fa85-4979-924b-865d2c2ece2f",
+    "principalName": "baker.rw_icloud.com#EXT#@bakerrwicloud.onmicrosoft.com",
+    "principalType": "User",
+    "roleDefinitionId": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/providers/Microsoft.Authorization/roleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+    "roleDefinitionName": "Owner",
+    "scope": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d",
+    "type": "Microsoft.Authorization/roleAssignments"
+  },
+  {
+    "canDelegate": null,
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/providers/Microsoft.Authorization/roleAssignments/6f3981c2-3869-4892-a83e-6e3612decd09",
+    "name": "6f3981c2-3869-4892-a83e-6e3612decd09",
+    "principalId": "6095407e-dfdd-4814-8641-f3a6e223d6ec",
+    "principalName": "https://spn/Z6NQ9BgYuoklg3CMjJ2pw7BMIrVuxKsPOvgK9sfYsak%3d",
+    "principalType": "ServicePrincipal",
+    "roleDefinitionId": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+    "roleDefinitionName": "Contributor",
+    "scope": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d",
+    "type": "Microsoft.Authorization/roleAssignments"
+  },
+  {
+    "canDelegate": null,
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/providers/Microsoft.Authorization/roleAssignments/1df55e06-c9ac-4f20-8ea3-70109aa5542b",
+    "name": "1df55e06-c9ac-4f20-8ea3-70109aa5542b",
+    "principalId": "d04ab6ec-21d0-40aa-90ed-daeb19f9844a",
+    "principalName": "https://VisualStudio/SPN991f8591-52a0-4b2a-ade6-a2ed2bf225f7",
+    "principalType": "ServicePrincipal",
+    "roleDefinitionId": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+    "roleDefinitionName": "Contributor",
+    "scope": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d",
+    "type": "Microsoft.Authorization/roleAssignments"
+  },
+  {
+    "canDelegate": null,
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Web/sites/cohort3/providers/Microsoft.Authorization/roleAssignments/eda22643-043a-47f7-aac7-77071082ade3",
+    "name": "eda22643-043a-47f7-aac7-77071082ade3",
+    "principalId": "3aa2ad3a-bc9e-4db5-9b22-a6003880c922",
+    "principalName": "https://VisualStudio/SPN430855d7-f634-4d3c-96d9-a8d2bde00196",
+    "principalType": "ServicePrincipal",
+    "resourceGroup": "tester",
+    "roleDefinitionId": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+    "roleDefinitionName": "Contributor",
+    "scope": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Web/sites/cohort3",
+    "type": "Microsoft.Authorization/roleAssignments"
+  },
+  {
+    "canDelegate": null,
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Web/sites/cohort3/providers/Microsoft.Authorization/roleAssignments/91af033e-7367-4020-99fc-b440c312f8a9",
+    "name": "91af033e-7367-4020-99fc-b440c312f8a9",
+    "principalId": "b36113d0-16cd-48e0-a83d-ad83fe05e39d",
+    "principalName": "https://VisualStudio/SPN2aa4d611-7d52-42b7-83c4-08b915b5fa00",
+    "principalType": "ServicePrincipal",
+    "resourceGroup": "tester",
+    "roleDefinitionId": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+    "roleDefinitionName": "Contributor",
+    "scope": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Web/sites/cohort3",
+    "type": "Microsoft.Authorization/roleAssignments"
+  },
+  {
+    "canDelegate": null,
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Web/sites/cohort3/providers/Microsoft.Authorization/roleAssignments/a15ada54-c864-49ee-b068-630cfeee3413",
+    "name": "a15ada54-c864-49ee-b068-630cfeee3413",
+    "principalId": "dc1c6f35-ae6c-41e7-aeec-d29203543648",
+    "principalName": "https://VisualStudio/SPNd9b30b0a-84b3-4b87-acf2-0e95420221f7",
+    "principalType": "ServicePrincipal",
+    "resourceGroup": "tester",
+    "roleDefinitionId": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+    "roleDefinitionName": "Contributor",
+    "scope": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Web/sites/cohort3",
+    "type": "Microsoft.Authorization/roleAssignments"
+  },
+  {
+    "canDelegate": null,
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Compute/virtualMachines/TesterServer/providers/Microsoft.Authorization/roleAssignments/4ecd4ca1-4522-4c0f-a3fd-d414031058b6",
+    "name": "4ecd4ca1-4522-4c0f-a3fd-d414031058b6",
+    "principalId": "ffcadb62-fa85-4979-924b-865d2c2ece2f",
+    "principalName": "baker.rw_icloud.com#EXT#@bakerrwicloud.onmicrosoft.com",
+    "principalType": "User",
+    "resourceGroup": "tester",
+    "roleDefinitionId": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/providers/Microsoft.Authorization/roleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+    "roleDefinitionName": "Owner",
+    "scope": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Compute/virtualMachines/TesterServer",
+    "type": "Microsoft.Authorization/roleAssignments"
+  }
+]

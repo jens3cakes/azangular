@@ -11,7 +11,7 @@ import { NgForm } from "@angular/forms";
 })
 
 export class HeaderComponent implements OnInit {
-  title = 'Cohort 3 Azure Pentest';
+  title = 'CloudHI Azurite';
   accounts: Object[]
   allResourceGroups: Object[]
 

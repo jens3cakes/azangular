@@ -1,0 +1,20 @@
+[
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/providers/Microsoft.Security/settings/MCAS",
+    "kind": null,
+    "name": "MCAS",
+    "properties": {
+      "enabled": true
+    },
+    "type": "Microsoft.Security/settings"
+  },
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/providers/Microsoft.Security/settings/WDATP",
+    "kind": null,
+    "name": "WDATP",
+    "properties": {
+      "enabled": true
+    },
+    "type": "Microsoft.Security/settings"
+  }
+]

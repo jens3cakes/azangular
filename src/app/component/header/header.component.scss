@@ -1,0 +1,36 @@
+h1{
+  font-size: 50px;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+button{
+  background-color: azure;
+  font-size: 20px;
+  padding: 10px 10px;
+  margin: 20px 20px;
+  border-radius: 12px;
+
+}
+.buttons{
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+body{
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-image: url('../../../assets/body-of-water-near-mountains-158385.jpg');
+  background-size: 1500px;
+  font-family: 'Archivo', sans-serif;
+
+}
+.header img{
+  float: left;
+  width: 250px;
+  height: 250px;
+}
