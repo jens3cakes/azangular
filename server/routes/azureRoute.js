@@ -149,4 +149,16 @@ router.get('/all_vnets', (req, res)=>{
   })
 });
 
+router.get('/webApp', (req, res)=>{
+  console.log('ps webapp')
+  ps.addCommand('az webapp list');
+  ps.invoke()
+  .then((response)=>{
+    res.json(JSON.parse(response))
+  })
+  .catch((err)=>{
+    res.json(err)
+  })
+});
+
 module.exports = router;

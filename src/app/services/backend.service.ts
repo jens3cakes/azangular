@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { SessionService } from './session.service'
-import { readPatchedData } from '@angular/core/src/render3/util';
 
 @Injectable({
   providedIn: 'root'
@@ -43,16 +42,12 @@ export class BackendService {
       .toPromise()
   };
 
-  fileInfo() {
-
-    // console.log('filegetter')
-    // const filegetterUrl = this.baseUrl + '/api/azure/print'
-    // return this.http.get(filegetterUrl)
-    // .toPromise()
-    // .then((Response)=>{
-    //   console.log(Response)
-    // })
-  };
+  webAppInfo(){
+    console.log('backendWebApp')
+    const webAppInfoUrl = this.baseUrl + '/api/azure/webApp'
+    return this.http.get(webAppInfoUrl)
+    .toPromise()
+  }
 
   showAccountNameId() {
     console.log('backend4')

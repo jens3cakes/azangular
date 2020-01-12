@@ -1,0 +1,16 @@
+<h1 class="title">{{title}}</h1>
+
+<div class="webappsinfo" *ngFor='let webAppInfo of webAppsInfo'>
+
+<button class='hide' (click)='toggle($event)'>Web App Info</button>
+
+<div class='info' *ngIf='show'>
+  <div class="infoList">
+    <ul>
+      <li><strong>App Service Plan Id: </strong>{{webAppInfo.appServicePlanId}}</li>
+    </ul>
+  </div>
+</div>
+
+
+</div>
