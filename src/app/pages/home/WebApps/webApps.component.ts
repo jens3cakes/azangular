@@ -88,10 +88,10 @@ export class WebAppsComponent implements OnInit {
 
   title: string = 'Web App Info';
   show: boolean;
+  btn: number = 0
 
   webAppsInfo: 
   {
-    
     'appServicePlanId': string,
     'availabilityState': string,
     'clientAffinityEnabled': boolean,
@@ -169,11 +169,20 @@ export class WebAppsComponent implements OnInit {
   }
 
   toggle($event){
+    console.log($event)
     this.show = false
-     if ($event) {
-       this.show = true
-     } else{
-       this.show = false
-     }
+    let inat = document.getElementById($event.target.id)
+    console.log(inat.id)
+    if($event.target.id == inat.id && $event){
+      return this.show = true
     }
+    else{
+      return this.show = false
+    }
+
+
+
+
+
   }
+}
