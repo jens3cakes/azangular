@@ -1,0 +1,42 @@
+[
+  {
+    "deletionTimestamp": null,
+    "description": "Users",
+    "dirSyncEnabled": null,
+    "displayName": "User",
+    "lastDirSyncTime": null,
+    "mail": null,
+    "mailEnabled": false,
+    "mailNickname": "e37a8960-2",
+    "objectId": "ada5f046-cd6e-4ec2-86c6-0a5d528f6509",
+    "objectType": "Group",
+    "odata.type": "Microsoft.DirectoryServices.Group",
+    "onPremisesDomainName": null,
+    "onPremisesNetBiosName": null,
+    "onPremisesSamAccountName": null,
+    "onPremisesSecurityIdentifier": null,
+    "provisioningErrors": [],
+    "proxyAddresses": [],
+    "securityEnabled": true
+  },
+  {
+    "deletionTimestamp": null,
+    "description": "Admin Users",
+    "dirSyncEnabled": null,
+    "displayName": "Admins",
+    "lastDirSyncTime": null,
+    "mail": null,
+    "mailEnabled": false,
+    "mailNickname": "68a91896-a",
+    "objectId": "b1af63b9-c228-4c1a-ba15-2310d6b763ba",
+    "objectType": "Group",
+    "odata.type": "Microsoft.DirectoryServices.Group",
+    "onPremisesDomainName": null,
+    "onPremisesNetBiosName": null,
+    "onPremisesSamAccountName": null,
+    "onPremisesSecurityIdentifier": null,
+    "provisioningErrors": [],
+    "proxyAddresses": [],
+    "securityEnabled": true
+  }
+]

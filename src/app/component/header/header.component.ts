@@ -60,6 +60,14 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['allVms'])
   }
 
+  vnetList(){
+    this.router.navigate(['all_vnets'])
+  }
+
+  seeWebApps(){
+    this.router.navigate(['webApps'])
+  }
+
   logout() {
     console.log('logout')
     return this.backend.logout()

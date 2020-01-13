@@ -1,0 +1,60 @@
+<h1 class="title">{{title}}</h1>
+
+<div class="webappsinfo" *ngFor='let webAppInfo of webAppsInfo; index as i'>
+  <ul>
+    <li><strong>App Service Plan Id: </strong>{{webAppInfo.appServicePlanId}}</li>
+    <li><strong>AvailabilityState: </strong>{{webAppInfo.availabilityState}}</li>
+    <li><strong>Client Affinity Enabled: </strong>{{webAppInfo.clientAffinityEnabled}}</li>
+    <li><strong>Client Certification Enabled: </strong>{{webAppInfo.clientCertEnabled}}</li>
+    <li><strong>Client Certification Exclusione Paths: </strong>{{webAppInfo.clientCertExclusionPaths}}</li>
+    <li><strong>Cloning Info: </strong>{{webAppInfo.cloningInfo}}</li>
+    <li><strong>Container Size: </strong>{{webAppInfo.containerSize}}</li>
+    <li><strong>Daily Memomry Time Quota: </strong>{{webAppInfo.dailyMemoryTimeQuota}}</li>
+    <li><strong>Default Host Name: </strong>{{webAppInfo.defaultHostName}}</li>
+    <li><strong>Enabled: </strong>{{webAppInfo.enabled}}</li>
+    <div *ngFor='let host of webAppInfo.enabledHostNames'>
+      <li><strong>Enabled Host Names: </strong>{{host.enabledHostNames}}</li>
+    </div>
+    <li><strong>Geologic Distributions: </strong>{{webAppInfo.geoDistributions}}</li>
+    <div *ngFor='let hostname of webAppInfo.hostNamesSslStates'>
+      <li><strong>Host Type: </strong>{{hostname.hostType}}</li>
+      <li><strong>IP Based SSL State: </strong>{{hostname.ipBasedSslState}}</li>
+      <li><strong>Name: </strong>{{hostname.name}}</li>
+      <li><strong>SSL State: </strong>{{hostname.sslState}}</li>
+      <li><strong>Update: </strong>{{hostname.toUpdate}}</li>
+      <li><strong>Update IP Based SSL: </strong>{{hostname.toUpdateIpBasedSsl}}</li>
+      <li><strong>Virtual IP: </strong>{{hostname.virtualIp}}</li>
+    </div>
+    <li><strong>Host Names: </strong>{{webAppInfo.hostNames}}</li>
+    <li><strong>Host Names Disabled: </strong>{{webAppInfo.hostNamesDisabled}}</li>
+    <li><strong>Hosting Environment Profile: </strong>{{webAppInfo.hostingEnvironmentProfile}}</li>
+    <li><strong>HTTPS Only: </strong>{{webAppInfo.httpsOnly}}</li>
+    <li><strong>HyperV: </strong>{{webAppInfo.hyperV}}</li>
+    <li><strong>Id: </strong>{{webAppInfo.id}}</li>
+    <li><strong>Identity: </strong>{{webAppInfo.identity}}</li>
+    <li><strong>In Progress Operation Id: </strong>{{webAppInfo.inProgressOperationId}}</li>
+    <li><strong>Default Container: </strong>{{webAppInfo.isDefaultContainer}}</li>
+    <li><strong>Xenon: </strong>{{webAppInfo.isXenon}}</li>
+    <li><strong>Kind: </strong>{{webAppInfo.kind}}</li>
+    <li><strong>Last Modified: </strong>{{webAppInfo.lastModifiedTimeUtc}} UTC</li>
+    <li><strong>Locaiton: </strong>{{webAppInfo.location}}</li>
+    <li><strong>Max Number of Workers: </strong>{{webAppInfo.maxNumberOfWorkers}}</li>
+    <li><strong>Name: </strong>{{webAppInfo.name}}</li>
+    <li><strong>Outbound IP Addresses: </strong>{{webAppInfo.outboundIpAddresses}}</li>
+    <li><strong>Possible Outbound IP Addresses: </strong>{{webAppInfo.possibleOutboundIpAddresses}}</li>
+    <li><strong>Redundamcy Mode: </strong>{{webAppInfo.redundencyMode}}</li>
+    <li><strong>Repository Site Name: </strong>{{webAppInfo.repositorySiteName}}</li>
+    <li><strong>Reserved: </strong>{{webAppInfo.reserved}}</li>
+    <li><strong>Resource Group: </strong>{{webAppInfo.resourceGroup}}</li>
+    <li><strong>SCM Site Stopped: </strong>{{webAppInfo.scmSiteAlsoStopped}}</li>
+    <li><strong>Site Configuration: </strong>{{webAppInfo.siteConfiguration}}</li>
+    <li><strong>Slot Swap Status: </strong>{{webAppInfo.slotSwapStatus}}</li>
+    <li><strong>Stated: </strong>{{webAppInfo.stated}}</li>
+    <li><strong>Suspend Till: </strong>{{webAppInfo.suspendTill}}</li>
+    <li><strong>Tags: </strong>{{webAppInfo.tags.App}}</li>
+    <li><strong>Target Swap Slot: </strong>{{webAppInfo.targetSwapSlot}}</li>
+    <li><strong>Traffic Manager Host Names: </strong>{{webAppInfo.trafficManagerHostNames}}</li>
+    <li><strong>Type: </strong>{{webAppInfo.type}}</li>
+    <li><strong>Usage State: </strong>{{webAppInfo.usageState}}</li>
+  </ul>
+</div>

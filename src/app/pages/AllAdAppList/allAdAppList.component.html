@@ -1,0 +1,75 @@
+<h1>{{title}}</h1>
+
+<div *ngFor='let list of adAppList'>
+  <h2>{{list.appId}}</h2>
+  <ul>
+    <li><strong>Accept Mapped Claims: </strong>{{list.acceptMappedClaims}}</li>
+    <li><strong>Add Ins: </strong>{{list.addIns}}</li>
+    <li><strong>Allow Guest Sign In: </strong>{{list.allowGuestSignIn}}</li>
+    <li><strong>Allow Passthrough Users: </strong>{{list.allowPassthroughUsers}}</li>
+    <li><strong>App Logo Url: </strong>{{list.appLogoUrl}}</li>
+    <li><strong>App Permissions: </strong>{{list.appPermissions}}</li>
+    <li><strong>App Roles: </strong>{{list.appRoles}}</li>
+    <li><strong>Application Template Id: </strong>{{list.applicationTemplateId}}</li>
+    <li><strong>Avaiable To Other Tenants: </strong>{{list.availableToOtherTenants}}</li>
+    <li><strong>Deletion Timestamp: </strong>{{list.deletionTimestamp}}</li>
+    <li><strong>Display Name: </strong>{{list.displayName}}</li>
+    <li><strong>Error URL: </strong>{{list.errorUrl}}</li>
+    <li><strong>Group Membership Claims: </strong>{{list.groupMembershipClaims}}</li>
+    <li><strong>Homepage: </strong>{{list.homepage}}</li>
+    <li><strong>Identifier URIs: </strong>{{list.identifierUris}}</li>
+    <li><strong>Informational URLs: </strong></li>
+    <li><strong> Marketing: </strong>{{list.informationalUrls.marketing}}</li>
+    <li><strong> Privacy: </strong>{{list.informationalUrls.privacy}}</li>
+    <li><strong> Support: </strong>{{list.informationalUrls.support}}</li>
+    <li><strong> Terms of Service: </strong>{{list.informationalUrls.termsOfService}}</li>
+    <li><strong>Device Only Authorization Supported: </strong>{{list.isDeviceOnlyAuthSupported}}</li>
+    <li><strong>Key Credentials: </strong>{{list.keyCredentials}}</li>
+    <li><strong>Known Client Applications: </strong>{{list.knownClientApplications}}</li>
+    <!-- <li><strong>Logo at OData.mediaeditlink: </strong>{{list.logo@odata.mediaEditLink}}</li>-->
+    <li><strong>Logo URL: </strong>{{list.logoUrl}}</li>
+    <li><strong>Logout URL: </strong>{{list.logoutUrl}}</li>
+    <!-- <li><strong>Main Logo at OData.mediaeditlink</strong>{{list.mainLogo@odata.mediaEditLink}}</li>-->
+    <li><strong>OAuth2 Allow Id Token Implicit Flow: </strong>{{list.oauth2AllowIdTokenImplicitFlow}}</li>
+    <li><strong>OAuth2 Allow Implicit Flow: </strong>{{list.oauth2AllowImplicitFlow}}</li>
+    <li><strong>OAuth2 Allow URL Path Matching: </strong>{{list.oauth2AllowUrlPathMatching}}</li>
+    <div *ngFor="let auth of list.oauth2Permissions">
+      <li><strong>OAuth2 Permissions: </strong></li>
+      <li><strong>Admin Consent Description: </strong>{{auth.adminConsentDescription}}</li>
+      <li><strong>Admin Consent Display Name: </strong>{{auth.adminConsentDisplayName}}</li>
+      <li><strong>Id: </strong>{{auth.id}}</li>
+      <li><strong>Enabled: </strong>{{auth.isEnabled}}</li>
+      <li><strong>Type: </strong>{{auth.type}}</li>
+      <li><strong>User Consent Description: </strong>{{auth.userConsentDescription}}</li>
+      <li><strong>User Consent Display Name: </strong>{{auth.userConsentDisplayName}}</li>
+      <li><strong>Value: </strong>{{auth.value}}</li>
+    </div>
+    <li><strong>OAuth2 Require Post Response: </strong>{{list.oauth2RequirePostResponse}}</li>
+    <li><strong>Object Id: </strong>{{list.objectId}}</li>
+    <li><strong>Object Type: </strong>{{list.objectType}}</li>
+    <li><strong>OData Type: </strong>{{list.odatatype}}</li>
+    <li><strong>Optional Claims: </strong>{{list.optionalCliams}}</li>
+    <li><strong>Organization Restrictions: </strong>{{list.orgRestrictions}}</li>
+    <li><strong>Parental Control Settings:</strong></li>
+    <li><strong> Countries Blocked for Minors: </strong>{{list.parentalControlSettings.countriesBlockedForMinors}}</li>
+    <li><strong> Legal Age Group Rule: </strong>{{list.parentalControlSettings.legalAgeGroupRule}}</li>
+    <div *ngFor='let cred of list.passwordCredentials'><strong>Password Credentials: </strong>
+      <li><strong>Additional Properties: </strong>{{cred.additionalProperties}}</li>
+      <li class="tab"><strong> Custom Key Identifier: </strong>{{cred.customKeyIdentifier}}</li>
+      <li class="tab"><strong> End Date: </strong>{{cred.endDate}}</li>
+      <li class="tab"><strong> Key Id: </strong>{{cred.keyid}}</li>
+      <li class="tab"><strong> Start Date: </strong>{{cred.startDate}}</li>
+      <li class="tab"><strong> Value: </strong>{{cred.value}}</li>
+    </div>
+    <li><strong>PreAuthorized Applications: </strong>{{list.preAuthorizedApplications}}</li>
+    <li><strong>Public Client: </strong>{{list.publicClient}}</li>
+    <li><strong>Publisher Domain: </strong>{{list.publisherDomain}}</li>
+    <li><strong>Record Consent Conditions: </strong>{{list.recordConsentConditions}}</li>
+    <li><strong>Reply URLs: </strong>{{list.replyUrls}}</li>
+    <li><strong>Resource Access Required: </strong>{{list.requiredResourceAccess}}</li>
+    <li><strong>SAML Metadata URL: </strong>{{list.samlMetadataUrl}}</li>
+    <li><strong>Sign In Audience: </strong>{{list.signInAudience}}</li>
+    <li><strong>Token Encryption Key Id: </strong>{{list.tokenEncryptionKeyId}}</li>
+    <li><strong>www Homepage: </strong>{{list.wwwHomepage}}</li>
+  </ul>
+</div>

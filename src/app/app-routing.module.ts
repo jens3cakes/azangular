@@ -10,7 +10,8 @@ import { SqlServerComponent } from './pages/SqlServer/sqlServer.component';
 import { SqlDatabasesComponent } from './pages/SqlDatabases/sqlDatabases.component';
 import { AllVmsComponent } from './pages/AllVms/allVms.component';
 import { AllVnetComponent } from './pages/AllVnet/all_vnet.component';
-import { WebAppsComponent } from './pages/home/WebApps/webApps.component';
+import { WebAppsComponent } from './pages/WebApps/webApps.component';
+import { AllAdAppListComponent } from './pages/AllAdAppList/allAdAppList.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'allVms', component: AllVmsComponent },
   { path: 'all_vnets', component: AllVnetComponent},
   { path: 'webApps', component: WebAppsComponent},
+  { path: 'allAdAppList', component: AllAdAppListComponent},
   { path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 

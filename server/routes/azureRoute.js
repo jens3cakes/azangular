@@ -125,40 +125,52 @@ router.get('/sqlDb/:group/:servename', (req, res) => {
     })
 });
 
-router.get('/allVms', (req, res)=>{
+router.get('/allVms', (req, res) => {
   console.log('ps vm')
   ps.addCommand(`az vm list`);
   ps.invoke()
-  .then(response =>{
-    res.json(JSON.parse(response))
-  })
-  .catch((err)=>{
-    res.json(err)
-  })
+    .then(response => {
+      res.json(JSON.parse(response))
+    })
+    .catch((err) => {
+      res.json(err)
+    })
 })
 
-router.get('/all_vnets', (req, res)=>{
+router.get('/all_vnets', (req, res) => {
   console.log('ps vnet')
   ps.addCommand(`az network vnet list`);
   ps.invoke()
-  .then((response)=>{
-    res.json(JSON.parse(response))
-  })
-  .catch((err)=> {
-    res.json(err)
-  })
+    .then((response) => {
+      res.json(JSON.parse(response))
+    })
+    .catch((err) => {
+      res.json(err)
+    })
 });
 
-router.get('/webApp', (req, res)=>{
+router.get('/webApp', (req, res) => {
   console.log('ps webapp')
   ps.addCommand('az webapp list');
   ps.invoke()
-  .then((response)=>{
-    res.json(JSON.parse(response))
-  })
-  .catch((err)=>{
-    res.json(err)
-  })
+    .then((response) => {
+      res.json(JSON.parse(response))
+    })
+    .catch((err) => {
+      res.json(err)
+    })
+});
+
+router.get('/adAppListAll', (req, res) => {
+  console.log('ps ad app list all')
+  ps.addCommand('az ad app list --all');
+  ps.invoke()
+    .then((response) => {
+      res.json(JSON.parse(response))
+    })
+    .catch((err) => {
+      res.json(err)
+    })
 });
 
 module.exports = router;

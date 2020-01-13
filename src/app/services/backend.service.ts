@@ -105,6 +105,13 @@ export class BackendService {
     .toPromise()
   }
 
+  adAppListAll(){
+    console.log('backend azAppListAll')
+    const adAppListAllUrl = this.baseUrl + `/api/azure/adAppListAll`
+    return this.http.get(adAppListAllUrl)
+    .toPromise()
+  }
+
   logout() {
     console.log('backend10')
     const logoutUrl = this.baseUrl + '/api/logout'

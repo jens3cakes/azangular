@@ -1,0 +1,402 @@
+[
+  {
+    "acceptMappedClaims": null,
+    "addIns": [],
+    "allowGuestsSignIn": null,
+    "allowPassthroughUsers": null,
+    "appId": "e05a2662-a498-476e-bb50-39a5167a8716",
+    "appLogoUrl": null,
+    "appPermissions": null,
+    "appRoles": [],
+    "applicationTemplateId": null,
+    "availableToOtherTenants": false,
+    "deletionTimestamp": null,
+    "displayName": "CloudHI-Azurite-7e066a99-f5d1-4cbb-b773-8bd68dd2c64d",
+    "errorUrl": null,
+    "groupMembershipClaims": null,
+    "homepage": "https://VisualStudio/SPN",
+    "identifierUris": [
+      "https://VisualStudio/SPN991f8591-52a0-4b2a-ade6-a2ed2bf225f7"
+    ],
+    "informationalUrls": {
+      "marketing": null,
+      "privacy": null,
+      "support": null,
+      "termsOfService": null
+    },
+    "isDeviceOnlyAuthSupported": null,
+    "keyCredentials": [],
+    "knownClientApplications": [],
+    "logo@odata.mediaEditLink": "directoryObjects/18c15e0a-811d-4e81-9534-a44a3f40589a/Microsoft.DirectoryServices.Application/logo",
+    "logoUrl": null,
+    "logoutUrl": null,
+    "mainLogo@odata.mediaEditLink": "directoryObjects/18c15e0a-811d-4e81-9534-a44a3f40589a/Microsoft.DirectoryServices.Application/mainLogo",
+    "oauth2AllowIdTokenImplicitFlow": true,
+    "oauth2AllowImplicitFlow": false,
+    "oauth2AllowUrlPathMatching": false,
+    "oauth2Permissions": [
+      {
+        "adminConsentDescription": "Allow the application to access CloudHI-Azurite-7e066a99-f5d1-4cbb-b773-8bd68dd2c64d on behalf of the signed-in user.",
+        "adminConsentDisplayName": "Access CloudHI-Azurite-7e066a99-f5d1-4cbb-b773-8bd68dd2c64d",
+        "id": "39d8d0e8-04ae-4ac5-abf9-26a3ab97f372",
+        "isEnabled": true,
+        "type": "User",
+        "userConsentDescription": "Allow the application to access CloudHI-Azurite-7e066a99-f5d1-4cbb-b773-8bd68dd2c64d on your behalf.",
+        "userConsentDisplayName": "Access CloudHI-Azurite-7e066a99-f5d1-4cbb-b773-8bd68dd2c64d",
+        "value": "user_impersonation"
+      }
+    ],
+    "oauth2RequirePostResponse": false,
+    "objectId": "18c15e0a-811d-4e81-9534-a44a3f40589a",
+    "objectType": "Application",
+    "odata.type": "Microsoft.DirectoryServices.Application",
+    "optionalClaims": null,
+    "orgRestrictions": [],
+    "parentalControlSettings": {
+      "countriesBlockedForMinors": [],
+      "legalAgeGroupRule": "Allow"
+    },
+    "passwordCredentials": [
+      {
+        "additionalProperties": null,
+        "customKeyIdentifier": null,
+        "endDate": "2021-12-31T05:44:59.651478+00:00",
+        "keyId": "21198b07-1719-47e7-b3c1-538c99f2bf05",
+        "startDate": "2019-12-31T05:44:59.651478+00:00",
+        "value": null
+      }
+    ],
+    "preAuthorizedApplications": null,
+    "publicClient": null,
+    "publisherDomain": "bakerrwicloud.onmicrosoft.com",
+    "recordConsentConditions": null,
+    "replyUrls": [
+      "https://VisualStudio/SPN"
+    ],
+    "requiredResourceAccess": [],
+    "samlMetadataUrl": null,
+    "signInAudience": "AzureADMyOrg",
+    "tokenEncryptionKeyId": null,
+    "wwwHomepage": null
+  },
+  {
+    "acceptMappedClaims": null,
+    "addIns": [],
+    "allowGuestsSignIn": null,
+    "allowPassthroughUsers": null,
+    "appId": "59fe9ebf-daa1-461d-b26c-33eed4e61a14",
+    "appLogoUrl": null,
+    "appPermissions": null,
+    "appRoles": [],
+    "applicationTemplateId": null,
+    "availableToOtherTenants": false,
+    "deletionTimestamp": null,
+    "displayName": "CloudHI-Azurite-7e066a99-f5d1-4cbb-b773-8bd68dd2c64d",
+    "errorUrl": null,
+    "groupMembershipClaims": null,
+    "homepage": "https://VisualStudio/SPN",
+    "identifierUris": [
+      "https://VisualStudio/SPN2aa4d611-7d52-42b7-83c4-08b915b5fa00"
+    ],
+    "informationalUrls": {
+      "marketing": null,
+      "privacy": null,
+      "support": null,
+      "termsOfService": null
+    },
+    "isDeviceOnlyAuthSupported": null,
+    "keyCredentials": [],
+    "knownClientApplications": [],
+    "logo@odata.mediaEditLink": "directoryObjects/aaa07967-2f31-4834-aa3f-9d7f33e86fa3/Microsoft.DirectoryServices.Application/logo",
+    "logoUrl": null,
+    "logoutUrl": null,
+    "mainLogo@odata.mediaEditLink": "directoryObjects/aaa07967-2f31-4834-aa3f-9d7f33e86fa3/Microsoft.DirectoryServices.Application/mainLogo",
+    "oauth2AllowIdTokenImplicitFlow": true,
+    "oauth2AllowImplicitFlow": false,
+    "oauth2AllowUrlPathMatching": false,
+    "oauth2Permissions": [
+      {
+        "adminConsentDescription": "Allow the application to access CloudHI-Azurite-7e066a99-f5d1-4cbb-b773-8bd68dd2c64d on behalf of the signed-in user.",
+        "adminConsentDisplayName": "Access CloudHI-Azurite-7e066a99-f5d1-4cbb-b773-8bd68dd2c64d",
+        "id": "afb056ed-b655-468a-8b23-3a6ae3b22986",
+        "isEnabled": true,
+        "type": "User",
+        "userConsentDescription": "Allow the application to access CloudHI-Azurite-7e066a99-f5d1-4cbb-b773-8bd68dd2c64d on your behalf.",
+        "userConsentDisplayName": "Access CloudHI-Azurite-7e066a99-f5d1-4cbb-b773-8bd68dd2c64d",
+        "value": "user_impersonation"
+      }
+    ],
+    "oauth2RequirePostResponse": false,
+    "objectId": "aaa07967-2f31-4834-aa3f-9d7f33e86fa3",
+    "objectType": "Application",
+    "odata.type": "Microsoft.DirectoryServices.Application",
+    "optionalClaims": null,
+    "orgRestrictions": [],
+    "parentalControlSettings": {
+      "countriesBlockedForMinors": [],
+      "legalAgeGroupRule": "Allow"
+    },
+    "passwordCredentials": [
+      {
+        "additionalProperties": null,
+        "customKeyIdentifier": null,
+        "endDate": "2021-12-31T06:53:21.913717+00:00",
+        "keyId": "6ee2d911-9e39-4832-b186-ac8c12870cf9",
+        "startDate": "2019-12-31T06:53:21.913717+00:00",
+        "value": null
+      }
+    ],
+    "preAuthorizedApplications": null,
+    "publicClient": null,
+    "publisherDomain": "bakerrwicloud.onmicrosoft.com",
+    "recordConsentConditions": null,
+    "replyUrls": [
+      "https://VisualStudio/SPN"
+    ],
+    "requiredResourceAccess": [],
+    "samlMetadataUrl": null,
+    "signInAudience": "AzureADMyOrg",
+    "tokenEncryptionKeyId": null,
+    "wwwHomepage": null
+  },
+  {
+    "acceptMappedClaims": null,
+    "addIns": [],
+    "allowGuestsSignIn": null,
+    "allowPassthroughUsers": null,
+    "appId": "7ee1ede7-9013-4ea6-b856-399987bafffa",
+    "appLogoUrl": null,
+    "appPermissions": null,
+    "appRoles": [],
+    "applicationTemplateId": null,
+    "availableToOtherTenants": false,
+    "deletionTimestamp": null,
+    "displayName": "CloudHI-Azurite-7e066a99-f5d1-4cbb-b773-8bd68dd2c64d",
+    "errorUrl": null,
+    "groupMembershipClaims": null,
+    "homepage": "https://VisualStudio/SPN",
+    "identifierUris": [
+      "https://VisualStudio/SPN430855d7-f634-4d3c-96d9-a8d2bde00196"
+    ],
+    "informationalUrls": {
+      "marketing": null,
+      "privacy": null,
+      "support": null,
+      "termsOfService": null
+    },
+    "isDeviceOnlyAuthSupported": null,
+    "keyCredentials": [],
+    "knownClientApplications": [],
+    "logo@odata.mediaEditLink": "directoryObjects/c021a808-10fa-4980-a6e6-f3193d8e5899/Microsoft.DirectoryServices.Application/logo",
+    "logoUrl": null,
+    "logoutUrl": null,
+    "mainLogo@odata.mediaEditLink": "directoryObjects/c021a808-10fa-4980-a6e6-f3193d8e5899/Microsoft.DirectoryServices.Application/mainLogo",
+    "oauth2AllowIdTokenImplicitFlow": true,
+    "oauth2AllowImplicitFlow": false,
+    "oauth2AllowUrlPathMatching": false,
+    "oauth2Permissions": [
+      {
+        "adminConsentDescription": "Allow the application to access CloudHI-Azurite-7e066a99-f5d1-4cbb-b773-8bd68dd2c64d on behalf of the signed-in user.",
+        "adminConsentDisplayName": "Access CloudHI-Azurite-7e066a99-f5d1-4cbb-b773-8bd68dd2c64d",
+        "id": "5efb27e1-3d7b-45b7-9402-43a14d660b1d",
+        "isEnabled": true,
+        "type": "User",
+        "userConsentDescription": "Allow the application to access CloudHI-Azurite-7e066a99-f5d1-4cbb-b773-8bd68dd2c64d on your behalf.",
+        "userConsentDisplayName": "Access CloudHI-Azurite-7e066a99-f5d1-4cbb-b773-8bd68dd2c64d",
+        "value": "user_impersonation"
+      }
+    ],
+    "oauth2RequirePostResponse": false,
+    "objectId": "c021a808-10fa-4980-a6e6-f3193d8e5899",
+    "objectType": "Application",
+    "odata.type": "Microsoft.DirectoryServices.Application",
+    "optionalClaims": null,
+    "orgRestrictions": [],
+    "parentalControlSettings": {
+      "countriesBlockedForMinors": [],
+      "legalAgeGroupRule": "Allow"
+    },
+    "passwordCredentials": [
+      {
+        "additionalProperties": null,
+        "customKeyIdentifier": null,
+        "endDate": "2021-12-29T00:46:35.943507+00:00",
+        "keyId": "a6e7fa6d-737e-47c7-aba8-d20a4475abc7",
+        "startDate": "2019-12-29T00:46:35.943507+00:00",
+        "value": null
+      }
+    ],
+    "preAuthorizedApplications": null,
+    "publicClient": null,
+    "publisherDomain": "bakerrwicloud.onmicrosoft.com",
+    "recordConsentConditions": null,
+    "replyUrls": [
+      "https://VisualStudio/SPN"
+    ],
+    "requiredResourceAccess": [],
+    "samlMetadataUrl": null,
+    "signInAudience": "AzureADMyOrg",
+    "tokenEncryptionKeyId": null,
+    "wwwHomepage": null
+  },
+  {
+    "acceptMappedClaims": null,
+    "addIns": [],
+    "allowGuestsSignIn": null,
+    "allowPassthroughUsers": null,
+    "appId": "677fd63c-95f1-4d90-ac6e-41ccdc0a684b",
+    "appLogoUrl": null,
+    "appPermissions": null,
+    "appRoles": [],
+    "applicationTemplateId": null,
+    "availableToOtherTenants": false,
+    "deletionTimestamp": null,
+    "displayName": "VMControl_Z6NQ9BgYuoklg3CMjJ2pw7BMIrVuxKsPOvgK9sfYsak=",
+    "errorUrl": null,
+    "groupMembershipClaims": null,
+    "homepage": "https://management.azure.com//subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.Automation/automationAccounts/VMControl",
+    "identifierUris": [
+      "https://spn/Z6NQ9BgYuoklg3CMjJ2pw7BMIrVuxKsPOvgK9sfYsak%3d"
+    ],
+    "informationalUrls": {
+      "marketing": null,
+      "privacy": null,
+      "support": null,
+      "termsOfService": null
+    },
+    "isDeviceOnlyAuthSupported": null,
+    "keyCredentials": [
+      {
+        "additionalProperties": null,
+        "customKeyIdentifier": "85B218597B251043DDDF874C0B445ABD62C1E101",
+        "endDate": "2020-12-21T00:00:00+00:00",
+        "keyId": "7396c4af-2ea9-4eed-81cd-c4bd7dc97745",
+        "startDate": "2019-12-20T00:00:00+00:00",
+        "type": "AsymmetricX509Cert",
+        "usage": "Verify",
+        "value": null
+      }
+    ],
+    "knownClientApplications": [],
+    "logo@odata.mediaEditLink": "directoryObjects/eb67ff8d-72b0-435f-b248-8dda284383de/Microsoft.DirectoryServices.Application/logo",
+    "logoUrl": null,
+    "logoutUrl": null,
+    "mainLogo@odata.mediaEditLink": "directoryObjects/eb67ff8d-72b0-435f-b248-8dda284383de/Microsoft.DirectoryServices.Application/mainLogo",
+    "oauth2AllowIdTokenImplicitFlow": true,
+    "oauth2AllowImplicitFlow": false,
+    "oauth2AllowUrlPathMatching": false,
+    "oauth2Permissions": [
+      {
+        "adminConsentDescription": "Allow the application to access VMControl_Z6NQ9BgYuoklg3CMjJ2pw7BMIrVuxKsPOvgK9sfYsak= on behalf of the signed-in user.",
+        "adminConsentDisplayName": "Access VMControl_Z6NQ9BgYuoklg3CMjJ2pw7BMIrVuxKsPOvgK9sfYsak=",
+        "id": "946c07b4-d1f8-4691-aaa8-2ce703344c2e",
+        "isEnabled": true,
+        "type": "User",
+        "userConsentDescription": "Allow the application to access VMControl_Z6NQ9BgYuoklg3CMjJ2pw7BMIrVuxKsPOvgK9sfYsak= on your behalf.",
+        "userConsentDisplayName": "Access VMControl_Z6NQ9BgYuoklg3CMjJ2pw7BMIrVuxKsPOvgK9sfYsak=",
+        "value": "user_impersonation"
+      }
+    ],
+    "oauth2RequirePostResponse": false,
+    "objectId": "eb67ff8d-72b0-435f-b248-8dda284383de",
+    "objectType": "Application",
+    "odata.type": "Microsoft.DirectoryServices.Application",
+    "optionalClaims": null,
+    "orgRestrictions": [],
+    "parentalControlSettings": {
+      "countriesBlockedForMinors": [],
+      "legalAgeGroupRule": "Allow"
+    },
+    "passwordCredentials": [],
+    "preAuthorizedApplications": null,
+    "publicClient": null,
+    "publisherDomain": "bakerrwicloud.onmicrosoft.com",
+    "recordConsentConditions": null,
+    "replyUrls": [],
+    "requiredResourceAccess": [],
+    "samlMetadataUrl": null,
+    "signInAudience": "AzureADMyOrg",
+    "tokenEncryptionKeyId": null,
+    "wwwHomepage": null
+  },
+  {
+    "acceptMappedClaims": null,
+    "addIns": [],
+    "allowGuestsSignIn": null,
+    "allowPassthroughUsers": null,
+    "appId": "5c20733d-bbe2-4206-bf8d-787d733b8f14",
+    "appLogoUrl": null,
+    "appPermissions": null,
+    "appRoles": [],
+    "applicationTemplateId": null,
+    "availableToOtherTenants": false,
+    "deletionTimestamp": null,
+    "displayName": "CloudHI-Azurite-7e066a99-f5d1-4cbb-b773-8bd68dd2c64d",
+    "errorUrl": null,
+    "groupMembershipClaims": null,
+    "homepage": "https://VisualStudio/SPN",
+    "identifierUris": [
+      "https://VisualStudio/SPNd9b30b0a-84b3-4b87-acf2-0e95420221f7"
+    ],
+    "informationalUrls": {
+      "marketing": null,
+      "privacy": null,
+      "support": null,
+      "termsOfService": null
+    },
+    "isDeviceOnlyAuthSupported": null,
+    "keyCredentials": [],
+    "knownClientApplications": [],
+    "logo@odata.mediaEditLink": "directoryObjects/fb897602-0304-4d90-befb-a56c0e2869cd/Microsoft.DirectoryServices.Application/logo",
+    "logoUrl": null,
+    "logoutUrl": null,
+    "mainLogo@odata.mediaEditLink": "directoryObjects/fb897602-0304-4d90-befb-a56c0e2869cd/Microsoft.DirectoryServices.Application/mainLogo",
+    "oauth2AllowIdTokenImplicitFlow": true,
+    "oauth2AllowImplicitFlow": false,
+    "oauth2AllowUrlPathMatching": false,
+    "oauth2Permissions": [
+      {
+        "adminConsentDescription": "Allow the application to access CloudHI-Azurite-7e066a99-f5d1-4cbb-b773-8bd68dd2c64d on behalf of the signed-in user.",
+        "adminConsentDisplayName": "Access CloudHI-Azurite-7e066a99-f5d1-4cbb-b773-8bd68dd2c64d",
+        "id": "7c27ee60-d3d3-41af-baf4-57b151458c3b",
+        "isEnabled": true,
+        "type": "User",
+        "userConsentDescription": "Allow the application to access CloudHI-Azurite-7e066a99-f5d1-4cbb-b773-8bd68dd2c64d on your behalf.",
+        "userConsentDisplayName": "Access CloudHI-Azurite-7e066a99-f5d1-4cbb-b773-8bd68dd2c64d",
+        "value": "user_impersonation"
+      }
+    ],
+    "oauth2RequirePostResponse": false,
+    "objectId": "fb897602-0304-4d90-befb-a56c0e2869cd",
+    "objectType": "Application",
+    "odata.type": "Microsoft.DirectoryServices.Application",
+    "optionalClaims": null,
+    "orgRestrictions": [],
+    "parentalControlSettings": {
+      "countriesBlockedForMinors": [],
+      "legalAgeGroupRule": "Allow"
+    },
+    "passwordCredentials": [
+      {
+        "additionalProperties": null,
+        "customKeyIdentifier": null,
+        "endDate": "2021-12-29T03:58:33.123623+00:00",
+        "keyId": "89442cf9-0c82-450e-af4b-c4aa160afe0b",
+        "startDate": "2019-12-29T03:58:33.123623+00:00",
+        "value": null
+      }
+    ],
+    "preAuthorizedApplications": null,
+    "publicClient": null,
+    "publisherDomain": "bakerrwicloud.onmicrosoft.com",
+    "recordConsentConditions": null,
+    "replyUrls": [
+      "https://VisualStudio/SPN"
+    ],
+    "requiredResourceAccess": [],
+    "samlMetadataUrl": null,
+    "signInAudience": "AzureADMyOrg",
+    "tokenEncryptionKeyId": null,
+    "wwwHomepage": null
+  }
+]
