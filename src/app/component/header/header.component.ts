@@ -68,6 +68,14 @@ export class HeaderComponent implements OnInit {
     this.router.navigate(['webApps'])
   }
 
+  adAppListAll(){
+    this.router.navigate(['allAdAppList'])
+  }
+
+  adGroupList(){
+    this.router.navigate(['adGroupList'])
+  }
+
   logout() {
     console.log('logout')
     return this.backend.logout()

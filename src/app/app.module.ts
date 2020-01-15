@@ -17,6 +17,7 @@ import { AllVmsComponent } from './pages/AllVms/allVms.component';
 import { AllVnetComponent } from './pages/AllVnet/all_vnet.component';
 import { WebAppsComponent } from './pages/WebApps/webApps.component';
 import { AllAdAppListComponent } from './pages/AllAdAppList/allAdAppList.component';
+import { AdGroupListComponent } from './pages/adGroupList/adGroupList.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { AllAdAppListComponent } from './pages/AllAdAppList/allAdAppList.compone
     AllVmsComponent,
     AllVnetComponent,
     WebAppsComponent,
-    AllAdAppListComponent
+    AllAdAppListComponent,
+    AdGroupListComponent
   ],
   imports: [
     BrowserModule,

@@ -12,6 +12,7 @@ import { AllVmsComponent } from './pages/AllVms/allVms.component';
 import { AllVnetComponent } from './pages/AllVnet/all_vnet.component';
 import { WebAppsComponent } from './pages/WebApps/webApps.component';
 import { AllAdAppListComponent } from './pages/AllAdAppList/allAdAppList.component';
+import { AdGroupListComponent } from './pages/adGroupList/adGroupList.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'all_vnets', component: AllVnetComponent},
   { path: 'webApps', component: WebAppsComponent},
   { path: 'allAdAppList', component: AllAdAppListComponent},
+  { path: 'adGroupList', component: AdGroupListComponent},
   { path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 

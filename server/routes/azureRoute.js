@@ -173,4 +173,16 @@ router.get('/adAppListAll', (req, res) => {
     })
 });
 
+router.get('/adGroupList', (req, res)=>{
+  console.log('ps ad group list')
+  ps.addCommand('az ad group list');
+  ps.invoke()
+  .then((Response)=>{
+    res.json(JSON.parse(Response))
+  })
+  .catch((err)=>{
+    res.json(err)
+  })
+});
+
 module.exports = router;

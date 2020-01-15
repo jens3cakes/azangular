@@ -42,11 +42,11 @@ export class BackendService {
       .toPromise()
   };
 
-  webAppInfo(){
+  webAppInfo() {
     console.log('backendWebApp')
     const webAppInfoUrl = this.baseUrl + '/api/azure/webApp'
     return this.http.get(webAppInfoUrl)
-    .toPromise()
+      .toPromise()
   }
 
   showAccountNameId() {
@@ -84,33 +84,40 @@ export class BackendService {
       .toPromise()
   }
 
-  showDbList(group,servename){
+  showDbList(group, servename) {
     console.log('backend9', group, servename)
     const showDbListUrl = this.baseUrl + `/api/azure/sqlDb/${group}/${servename}`
-    return this.http.get(showDbListUrl,{params:{group:group, servename:servename}})
-    .toPromise()
+    return this.http.get(showDbListUrl, { params: { group: group, servename: servename } })
+      .toPromise()
   }
 
-  showVmList(){
+  showVmList() {
     console.log('backend11')
     const showVmListUrl = this.baseUrl + `/api/azure/allVms`
     return this.http.get(showVmListUrl)
-    .toPromise()
+      .toPromise()
   }
 
-  showVnetList(){
+  showVnetList() {
     console.log('backend12')
     const showVnetListUrl = this.baseUrl + `/api/azure/all_vnets`
     return this.http.get(showVnetListUrl)
-    .toPromise()
+      .toPromise()
   }
 
-  adAppListAll(){
+  adAppListAll() {
     console.log('backend azAppListAll')
     const adAppListAllUrl = this.baseUrl + `/api/azure/adAppListAll`
     return this.http.get(adAppListAllUrl)
-    .toPromise()
+      .toPromise()
   }
+
+  adGroupList() {
+    console.log('backend adGroup list')
+    const adGroupListUrl = this.baseUrl + `/api/azure/adGroupList`
+    return this.http.get(adGroupListUrl)
+      .toPromise()
+  };
 
   logout() {
     console.log('backend10')

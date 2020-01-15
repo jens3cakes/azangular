@@ -16,6 +16,10 @@
     <span><button (click)='vnetList()' *ngIf='isLoggedIn'>Virtual Networks</button></span>
 
     <span><button (click)='seeWebApps()' *ngIf='isLoggedIn'>Web Apps</button></span>
+    
+    <span><button (click)='adAppListAll()' *ngIf='isLoggedIn'>Active Directory App List</button></span>
+
+    <span><button (click)='adGroupList()'></button></span>
 
     <button (click)="logout()" *ngIf="isLoggedIn">Logout of Azure</button></h2>
 

@@ -1,0 +1,24 @@
+<h1>{{title}}</h1>
+<div *ngFor='let group of groups; index as i'>
+  <ul>
+    <li><strong>Timestamp Deletion: </strong>{{group.deletionTimestamp}}</li>
+    <li><strong>Group Description: </strong>{{group.description}}</li>
+    <li><strong>Directory Sync Enabled: </strong>{{group.dirSyncEnabled}}</li>
+    <li><strong>Display Name: </strong>{{group.displayName}}</li>
+    <li><strong>Last Directory Sync Time: </strong>{{group.lastDirSyncTime}}</li>
+    <li><strong>Mail: </strong>{{group.mail}}</li>
+    <li><strong>Mail Enabled: </strong>{{group.mailEnabled}}</li>
+    <li><strong>Mail Nickname: </strong>{{group.mailNickname}}</li>
+    <li><strong>Object Id: </strong>{{group.objectId}}</li>
+    <li><strong>Object Type: </strong>{{group.objectType}}</li>
+    <li><strong>OData Type: </strong>{{group["odata.type"]}}</li>
+    <li><strong>On Premises Domain Name: </strong>{{group.onPremisesDomainName}}</li>
+    <li><strong>On Premises Net Bios Name: </strong>{{group.onPremisesNetBiosName}}</li>
+    <li><strong>On Premises SAM Account Name: </strong>{{group.onPremisesSamAccountName}}</li>
+    <li><strong>On Premises Security Identifier: </strong>{{group.onPremisesSecurityIdentifier}}</li>
+    <li><strong>Provisioning Errors: </strong>{{group.provisioningErrors}}</li>
+    <li><strong>Proxy Addresses: </strong>{{group.proxyAddresses}}</li>
+    <li><strong>Security Enabled: </strong>{{group.securityEnabled}}</li>
+  </ul>
+<!--</div>-->
+<!-- {{ list["logo@odata"].mediaEditLink }} -->
