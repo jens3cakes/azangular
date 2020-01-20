@@ -17,7 +17,6 @@ export class ListAccountsComponent implements OnInit {
 
   }
   ngOnInit() {
-    console.log('list onint fired', this.backend.listAllAccounts())
     this.backend.listAllAccounts()
       .then((resp: any) => {
         this.accounts = resp

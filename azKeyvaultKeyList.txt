@@ -1,0 +1,15 @@
+[
+  {
+    "attributes": {
+      "created": "2020-01-14T06:43:28+00:00",
+      "enabled": true,
+      "expires": "2022-01-16T06:42:23+00:00",
+      "notBefore": null,
+      "recoveryLevel": "Purgeable",
+      "updated": "2020-01-14T06:43:28+00:00"
+    },
+    "kid": "https://cohort3keyvault.vault.azure.net/keys/keyone",
+    "managed": null,
+    "tags": null
+  }
+]

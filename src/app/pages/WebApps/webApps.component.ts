@@ -80,8 +80,6 @@ export class WebAppsComponent implements OnInit {
         'usageState': string
       }[]) => {
         this.webAppsInfo = resp
-
-        console.log(Object.keys(this.webAppsInfo))
         return this.webAppsInfo
       })
 

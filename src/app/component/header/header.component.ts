@@ -21,25 +21,16 @@ export class HeaderComponent implements OnInit {
     private session: SessionService
   ) {
     this.isLoggedIn = this.session.getLogStatus()
-    console.log(this.isLoggedIn)
-
   }
   isLoggedIn: boolean;
 
   ngOnInit() {
     this.isLoggedIn = this.session.getLogStatus()
-    console.log(this.isLoggedIn)
-    console.log('header onInit fired')
-
   }
 
 
   login() {
-    console.log('header ts')
     return this.backend.login()
-      .then(() => {
-        console.log('return from backend')
-      })
       .then(() => {
         return this.router.navigate(['home'])
       })

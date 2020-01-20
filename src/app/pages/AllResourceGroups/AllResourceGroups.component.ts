@@ -34,11 +34,6 @@ export class AllResourceGroupsComponent implements OnInit {
   }
 
   showSqlServer(id){
-    // this.backend.showSqlServer(id)
-    // .then((resp:any)=>{
-    //   console.log(resp)
-    //   this.sqlData = resp
-    // })
       this.router.navigate(['sqlServer', id])
   }
 }

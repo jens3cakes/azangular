@@ -19,7 +19,7 @@
     
     <span><button (click)='adAppListAll()' *ngIf='isLoggedIn'>Active Directory App List</button></span>
 
-    <span><button (click)='adGroupList()'></button></span>
+    <span><button (click)='adGroupList()'*ngIf='isLoggedIn'>Active Directory Group List</button></span>
 
     <button (click)="logout()" *ngIf="isLoggedIn">Logout of Azure</button></h2>
 

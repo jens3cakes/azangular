@@ -1,0 +1,12 @@
+{
+  "environmentName": "AzureCloud",
+  "id": "7e066a99-f5d1-4cbb-b773-8bd68dd2c64d",
+  "isDefault": true,
+  "name": "Azure subscription 1",
+  "state": "Enabled",
+  "tenantId": "f6a8b22b-5315-4961-a00f-1bc4eac90dd4",
+  "user": {
+    "name": "baker.rw@icloud.com",
+    "type": "user"
+  }
+}

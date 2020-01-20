@@ -19,9 +19,11 @@ const ps = new Shell({
 app.use(express.static(path.join(__dirname + 'public')));
 app.use(bodyparser.json());
 
+function handleServer(req, res){
+  
+}
 
 app.get('/api/login', (req, res) => {
-  console.log('server1')
   ps.addCommand('az login');
   ps.invoke()
     .then(response => {
@@ -37,7 +39,6 @@ app.get('/api/logout', (req, res)=>{
   ps.addCommand('az account clear');
   ps.invoke()
   .then(()=>{
-    console.log('logged out')
   })
   .catch(err =>{
     res.json(err)

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "/subscriptions/7e066a99-f5d1-4cbb-b773-8bd68dd2c64d/resourceGroups/tester/providers/Microsoft.KeyVault/vaults/Cohort3KeyVault",
+    "location": "northcentralus",
+    "name": "Cohort3KeyVault",
+    "resourceGroup": "tester",
+    "tags": {
+      "KeyVault": "Key Vault"
+    },
+    "type": "Microsoft.KeyVault/vaults"
+  }
+]

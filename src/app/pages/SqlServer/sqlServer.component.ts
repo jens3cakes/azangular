@@ -31,10 +31,6 @@ serverData:any
 
 sqlDatabase(group,servename){
   this.router.navigate(['sqlDatabases', group,servename ])
-  // this.backend.showDbList(group,servename)
-  // .then((resp)=>{
-  //   console.log(resp)
-  // })
 }
 
 

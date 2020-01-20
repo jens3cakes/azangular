@@ -19,6 +19,17 @@ export class ShowAccountComponent implements OnInit {
       name: string,
       type: string
     }
+  }={
+    environmentName:"",
+    id:"",
+    isDefault:"",
+    name:"",
+    state:"",
+    tenantId:"",
+    user: {
+      name:"",
+      type:""
+    }
   }
 
   groups: any
@@ -26,7 +37,7 @@ export class ShowAccountComponent implements OnInit {
 
   nosy: boolean = false
 
-  title: string = 'shit show'
+  title: string = 'Account'
 
 
   ngOnInit() {

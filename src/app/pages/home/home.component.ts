@@ -10,13 +10,14 @@ import { BackendService } from '../../services/backend.service';
 export class HomeComponent implements OnInit {
   ngOnInit() {
     this.backend.userRoleAssignment()
-      .then((Response) => {
-         return this.user.id = Response[0].id.slice(15, 51), this.user.name = Response[0].name, this.user.principalId = Response[0].principalId, this.user.principalName = Response[0].principalName, this.user.principalType = Response[0].principalType, this.user.roleDefinitionId = Response[0].roleDefinitionId, this.user.roleDefinitionName = Response[0].roleDefinitionName, this.user.scope = Response[0].scope, this.user.type = Response[0].type
+      .then((Response: Object) => {
+        return this.users = Response
+        //  return this.users.id = Response[0].id.slice(15, 51), this.users.name = Response[0].name, this.users.principalId = Response[0].principalId, this.users.principalName = Response[0].principalName, this.users.principalType = Response[0].principalType, this.users.roleDefinitionId = Response[0].roleDefinitionId, this.users.roleDefinitionName = Response[0].roleDefinitionName, this.users.scope = Response[0].scope, this.users.type = Response[0].type
       })
   };
 
   title: string = 'Welcome to CloudHI Azurite';
-
+  users: Object
   user: {
     'id': string,
     'name': string,
@@ -29,7 +30,7 @@ export class HomeComponent implements OnInit {
     'type': string,
   }
     = {
-      'id': "",
+      'id': "".slice(15,51),
       'name': "",
       'principalId': "",
       'principalName': "",

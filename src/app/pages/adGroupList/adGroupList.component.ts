@@ -11,27 +11,8 @@ export class AdGroupListComponent implements OnInit {
 
 
   ngOnInit() {
-    console.log('onInit fired')
     this.backend.adGroupList()
-      .then((resp: {
-        "deletionTimestamp": string,
-        "description": string,
-        "dirSyncEnabled": string,
-        "displayName": string,
-        "lastDirSyncTime": string,
-        "mail": string,
-        "mailEnabled": boolean,
-        "mailNickname": string,
-        "objectId": string,
-        "objectType": string,
-        "odata.type": string,
-        "onPremisesDomainName": string,
-        "onPremisesNetBiosName": string,
-        "onPremisesSamAccountName": string,
-        "onPremisesSecurityIdentifier": string,
-        "provisioningErrors": [],
-        "proxyAddresses": [],
-        "securityEnabled": boolean
+      .then((resp: {"deletionTimestamp","description","dirSyncEnabled","displayName","lastDirSyncTime","mail","mailEnabled","mailNickname","objectId","objectType","odata.type","onPremisesDomainName","onPremisesNetBiosName","onPremisesSamAccountName","onPremisesSecurityIdentifier","provisioningErrors","proxyAddresses","securityEnabled"
       }[]) => {
         this.groups = resp
         return this.groups
@@ -39,7 +20,8 @@ export class AdGroupListComponent implements OnInit {
   }
 
   title: string = "Active Directory Group List"
-  groups: {
+  groups:{"deletionTimestamp","description","dirSyncEnabled","displayName","lastDirSyncTime","mail","mailEnabled","mailNickname","objectId","objectType","odata.type","onPremisesDomainName","onPremisesNetBiosName","onPremisesSamAccountName","onPremisesSecurityIdentifier","provisioningErrors","proxyAddresses","securityEnabled"}[]=[]
+  group: {
     "deletionTimestamp": string,
     "description": string,
     "dirSyncEnabled": string,
@@ -58,7 +40,26 @@ export class AdGroupListComponent implements OnInit {
     "provisioningErrors": [],
     "proxyAddresses": [],
     "securityEnabled": boolean
-  }[]
+  }={
+  "deletionTimestamp": "",
+  "description": "",
+  "dirSyncEnabled": "",
+  "displayName": "",
+  "lastDirSyncTime": "",
+  "mail": "",
+  "mailEnabled": null,
+  "mailNickname": "",
+  "objectId": "",
+  "objectType": "",
+  "odata.type": "",
+  "onPremisesDomainName": "",
+  "onPremisesNetBiosName": "",
+  "onPremisesSamAccountName": "",
+  "onPremisesSecurityIdentifier": "",
+  "provisioningErrors": [],
+  "proxyAddresses": [],
+  "securityEnabled": null
+  }
 
   constructor(
     private router: Router,

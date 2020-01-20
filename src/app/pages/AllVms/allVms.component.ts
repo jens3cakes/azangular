@@ -12,7 +12,6 @@ export class AllVmsComponent implements OnInit {
 
 
   ngOnInit() {
-    console.log('vm onint fired')
     this.backend.showVmList()
       .then((resp: {
         'additionalCapabilities': boolean,

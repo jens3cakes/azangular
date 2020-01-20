@@ -18,6 +18,7 @@ import { AllVnetComponent } from './pages/AllVnet/all_vnet.component';
 import { WebAppsComponent } from './pages/WebApps/webApps.component';
 import { AllAdAppListComponent } from './pages/AllAdAppList/allAdAppList.component';
 import { AdGroupListComponent } from './pages/adGroupList/adGroupList.component';
+import { KeyvaultListComponent } from './pages/keyvault-list/keyvault-list.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { AdGroupListComponent } from './pages/adGroupList/adGroupList.component'
     AllVnetComponent,
     WebAppsComponent,
     AllAdAppListComponent,
-    AdGroupListComponent
+    AdGroupListComponent,
+    KeyvaultListComponent
   ],
   imports: [
     BrowserModule,

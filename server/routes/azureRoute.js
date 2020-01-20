@@ -11,36 +11,35 @@ const fs = require('fs');
 
 
 router.get('/accounts', (req, res) => {
-  console.log('ps account')
   ps.addCommand('az account list');
   ps.invoke()
     .then(response => {
       fs.writeFile(`./src/app/pages/listAccounts/accountlist_${Date.now()}.txt`, response, (err) => {
         if (err) throw err;
-        console.log('file saved')
       })
       res.json(JSON.parse(response))
     })
     .catch(err => {
       res.json(err)
-    });
+    })
 });
 
 
 router.get('/account', (req, res) => {
-  console.log('ps show account')
   ps.addCommand('az account show');
   ps.invoke()
     .then(response => {
+      fs.writeFile(`./account_${Date.now()}.txt`, response, (err) => {
+        if (err) throw err;
+      })
       res.json(JSON.parse(response))
     })
     .catch(err => {
       res.json(err)
-    });
+    })
 });
 
 router.get('/subId', (req, res) => {
-  console.log('ps sub id')
   ps.addCommand('az account show --query "[id,name]"');
   ps.invoke()
     .then(response => {
@@ -48,11 +47,10 @@ router.get('/subId', (req, res) => {
     })
     .catch(err => {
       res.json(err)
-    });
+    })
 });
 
 router.get('/tenId', (req, res) => {
-  console.log('ps tenat id')
   ps.addCommand('az account show --query "tenantId"');
   ps.invoke()
     .then(response => {
@@ -64,24 +62,27 @@ router.get('/tenId', (req, res) => {
 })
 
 router.get('/grouplist/:subId', (req, res) => {
-  console.log('g list by sub id', req.params.subId)
   ps.addCommand(`az group list --subscription ${req.params.subId}`);
   ps.invoke()
     .then(response => {
+      fs.writeFile(`./groupListBySubId_${Date.now()}.txt`, response, (err) => {
+        if (err) throw err;
+      })
       res.json(JSON.parse(response))
     })
     .catch(err => {
       res.send(err)
-    });
+    })
 });
 
 router.get('/groups', (req, res) => {
-  console.log('ps group')
   ps.addCommand('az group list');
   ps.invoke()
     .then(response => {
+      fs.writeFile(`./groups_${Date.now()}.txt`, response, (err) => {
+        if (err) throw err;
+      })
       res.json(JSON.parse(response))
-      console.log('azroute', typeof (JSON.parse(response)))
     })
     .catch(err => {
       res.json(err)
@@ -89,100 +90,127 @@ router.get('/groups', (req, res) => {
 });
 
 router.get('/user', (req, res) => {
-  console.log('ps users')
   ps.addCommand(`az role assignment list`);
   ps.invoke()
     .then(response => {
-      console.log('hell')
+      fs.writeFile(`./usersList_${Date.now()}.txt`, response, (err) => {
+        if (err) throw err;
+      })
       res.json(JSON.parse(response))
     })
-    .catch((err) => {
+    .catch(err => {
       res.json(err)
     })
 });
 
 router.get('/sql/:id', (req, res) => {
-  console.log('ps sql', req.params.id)
   ps.addCommand(`az sql server list --subscription ${req.params.id}`);
   ps.invoke()
     .then(response => {
+      fs.writeFile(`./sqlServerList_${Date.now()}.txt`, response, (err) => {
+        if (err) throw err;
+      })
       res.json(JSON.parse(response))
     })
-    .catch((err) => {
+    .catch(err => {
       res.json(err)
     })
 });
 
 router.get('/sqlDb/:group/:servename', (req, res) => {
-  console.log('ps db', req.params.group, req.params.servename)
   ps.addCommand(`az sql db list -g ${req.params.group} -s ${req.params.servename}`)
   ps.invoke()
     .then((response) => {
+      fs.writeFile(`./sqlDatabaseList_${Date.now()}.txt`, response, (err) => {
+        if (err) throw err;
+      })
       res.json(JSON.parse(response))
     })
-    .catch((err) => {
+    .catch(err => {
       res.json(err)
     })
 });
 
 router.get('/allVms', (req, res) => {
-  console.log('ps vm')
   ps.addCommand(`az vm list`);
   ps.invoke()
     .then(response => {
+      fs.writeFile(`./virtualMachineList_${Date.now()}.txt`, response, (err) => {
+        if (err) throw err;
+      })
       res.json(JSON.parse(response))
     })
-    .catch((err) => {
+    .catch(err => {
       res.json(err)
     })
 })
 
 router.get('/all_vnets', (req, res) => {
-  console.log('ps vnet')
   ps.addCommand(`az network vnet list`);
   ps.invoke()
     .then((response) => {
+      // fs.writeFile(`./virtualNetworkList_${Date.now()}.txt`, response, (err) => {
+      //   if (err) throw err;
+      // })
       res.json(JSON.parse(response))
     })
-    .catch((err) => {
+    .catch(err => {
       res.json(err)
     })
 });
 
 router.get('/webApp', (req, res) => {
-  console.log('ps webapp')
   ps.addCommand('az webapp list');
   ps.invoke()
     .then((response) => {
+      fs.writeFile(`./webAppList_${Date.now()}.txt`, response, (err) => {
+        if(err) throw err;
+      })
       res.json(JSON.parse(response))
     })
-    .catch((err) => {
+    .catch(err => {
       res.json(err)
     })
 });
 
 router.get('/adAppListAll', (req, res) => {
-  console.log('ps ad app list all')
   ps.addCommand('az ad app list --all');
   ps.invoke()
     .then((response) => {
+      fs.writeFile(`./adAppListAll_${Date.now()}.txt`, response, (err) => {
+        if (err) throw err;
+      })
       res.json(JSON.parse(response))
     })
-    .catch((err) => {
+    .catch(err => {
       res.json(err)
     })
 });
 
-router.get('/adGroupList', (req, res)=>{
-  console.log('ps ad group list')
+router.get('/adGroupList', (req, res) => {
   ps.addCommand('az ad group list');
   ps.invoke()
-  .then((Response)=>{
-    res.json(JSON.parse(Response))
+    .then((response) => {
+      fs.writeFile(`./adGroupList_${Date.now()}.txt`, response, (err) => {
+        if(err) throw err;
+      })
+      res.json(JSON.parse(response))
+    })
+    .catch(err => {
+      res.json(err)
+    })
+});
+
+router.get('/keyvaultList', (req, res)=>{
+  ps.addCommand(`az keyvault list`);
+  ps.invoke()
+  .then((response)=>{
+    fs.writeFile(`./keyvaultList_${Date.now().txt}`, response, (err)={if(err) {throw err}})
+    res.json(JSON.parse(response))
   })
   .catch((err)=>{
     res.json(err)
   })
-});
+})
 
 module.exports = router;
