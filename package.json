@@ -27,7 +27,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
-    "knex": "^0.20.4",
+    "knex": "^2.4.0",
     "node-powershell": "^4.0.0",
     "nodemon": "^2.0.2",
     "rxjs": "~6.3.3",
